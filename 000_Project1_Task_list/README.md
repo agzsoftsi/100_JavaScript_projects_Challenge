@@ -19,7 +19,7 @@ Basic App to manage Tasks (create, delete, monitoring)
 
 ## Access Link
 
-[Run App](/000_Project1_Task_list)
+[Run App](https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/000_Project1_Task_list/index.html)
 
 ## Technologies:
 
