@@ -1,0 +1,95 @@
+.body-light{
+    
+    background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #ffffff, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #ffffff, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+.body-dark{
+background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.theme{
+    float: right;
+}
+
+.theme a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+.theme a:hover{
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+}
+
+
+.social-media{
+    font-size: 2rem;
+   
+}
+.fa-github-square{
+    color: rgba(20, 20, 20);
+}
+.fa-linkedin{
+    color: rgb(0, 85, 165);
+}   
+.fa-twitter-square{
+    color: dodgerblue;
+}
+.fa-youtube-square{
+    color: firebrick;
+}
+.fa-instagram-square{
+    color: rgb(236, 130, 236);
+}
+
+
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: none;
+}
+
+.bg-new-element{
+    background-color: #46BED5;
+}
+
+.element-close{
+    font-size: 24px;
+    float: right;
+}
+
+#product-list a{
+    text-decoration: none;
+}
+
+#product-list a:hover{
+    text-decoration: none;
+}
+
+#product-list .border{
+    border-width: 3px !important;
+    box-shadow: 5px 5px 10px #888888 !important;
+}
+
+#task{
+    box-shadow: 5px 5px 10px #888888 !important;
+}
+
+.iconMessage{
+    float: left;
+}
+
+.btn-task{
+    text-decoration: none;
+}
+
+.btn-task:hover{
+    text-decoration: none;
+}
