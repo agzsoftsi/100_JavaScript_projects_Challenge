@@ -12,7 +12,8 @@ class Task{
         let registeredLow = 0 
         let registeredMedium = 0
         let registeredHigh = 0
-
+        let registeredTask = 0
+        let modalTimeFull = 0
 
 // creamos una Clase User Interface que gestione los metodos que queremos desarrollar en el programa
 class UI{
@@ -69,22 +70,26 @@ class UI{
     //eliminamos el elemento padre <div> que tenga el name=delete de donde se ejecuto el evento de click
     deleteTask(element){
         
-        if(element.name === "delete"){
-            //console.log("delete")
-            element.parentElement.parentElement.parentElement.remove()
-            // mostrar mnensaje para eliminar
-
-            this.showMessage("Task Deleted Successfully", "danger", "fa-calendar-times")
+        if(element.name === "delete" || element.name === "complete"){
+            if(element.name === "delete"){
+                //console.log("delete")
+                element.parentElement.parentElement.parentElement.remove()
+                // mostrar mnensaje para eliminar
+    
+                this.showMessage("Task Deleted Successfully", "danger", "fa-calendar-times")
+            }
+            if(element.name === "complete"){
+                //console.log("delete")
+                element.parentElement.parentElement.parentElement.remove()
+                // mostrar mnensaje para eliminar
+    
+                this.showMessage("Task Completed Successfully", "warning", "fa-trophy" )
+                countTaskW(1)
+            }
+            countTask(-1)
         }
-        if(element.name === "complete"){
-            //console.log("delete")
-            element.parentElement.parentElement.parentElement.remove()
-            // mostrar mnensaje para eliminar
 
-            this.showMessage("Task Completed Successfully", "warning", "fa-trophy" )
-            countTaskW(1)
-        }
-        countTask(-1)
+    
     }
 
     showMessage(message, cssClass, iconClass){
@@ -123,9 +128,13 @@ document.getElementById("task-form").addEventListener("submit", function (e){
     //console.log(product)
 
     // Registro cuantas tareas se han agregado
-    let registeredTask = 0
+    
     registeredTask += 1
     document.getElementById("modalRegistered").innerText=registeredTask
+
+    // Registro cuantas horas en tareas se han agregado
+    modalTimeFull += parseFloat(task.time)
+    document.getElementById("modalEstimated").innerText=modalTimeFull+" hours"
 
     
     
@@ -177,10 +186,19 @@ function countTaskW(t){
     
 }
 
+// capturamos la fecha
+function getDate(){
+    let dateTask = new Date()
+    document.getElementById("modalDate").innerText= dateTask.getDate()+"-"+(dateTask.getMonth()+1)+"-"+dateTask.getFullYear()
+
+    //console.log(dateTask) 
+}
+
 // reestablecemos la App a 0
 
 window.onload = function() {
     countTask(0)
     countTaskW(0)
+    getDate()
     
   }
