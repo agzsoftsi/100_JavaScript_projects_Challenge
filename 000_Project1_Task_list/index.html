@@ -54,7 +54,7 @@
                 </div>
                 <div class="theme">
                     <a href="#" title="Restart" onclick="window.location.reload();"> <i class="fas fa-undo mr-2 text-dark"></i></a>
-                    <span id="countValW" class="badge badge-warning mr-2" title="Completed"></span>
+                    <span id="countValW" class="badge badge-warning mr-2" title="Nº Tasks Completed"></span>
                     <span id="countVal" class="badge badge-primary mr-2" title="Nº Tasks"></span>
                    <a href="#" title="Light" class="light_t"> <i class="fas fa-sun mr-2"></i> </a>
                    <a href="#" title="Dark" class="dark_t"><i class="fas fa-moon"></i> </a>
@@ -70,7 +70,7 @@
                 <div class="col-md-4">
                     <div class="card border border-primary mb-3" id="task">
                         <div class="card-header">
-                            <h5 class="card-title"><i class="far fa-plus-square text-primary"></i> Create Task </h5>
+                            <h5 class="card-title"><i class="far fa-plus-square text-primary"></i> Create Task <a href="#" class="element-stats" data-toggle="modal" data-target="#statsModal" title="Stats"><i class="fas fa-info-circle text-primary"></i> </a></h5>
                         </div>
                         
                           <form id="task-form" class="card-body">
@@ -121,7 +121,50 @@
         </nav>
     </footer>
 
+     <!-- STATS SECTION -->
+     <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-info-circle text-primary mr-3 element-stats2"></i>Stats</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="ml-4 p-2">
+                <i class="fas fa-calendar-alt mr-3 text-secondary"></i>Date: <strong> <span id="modalDate"></span></strong>
+              </div>
+              <div class="ml-4 p-2">
+                <i class="fas fa-tasks mr-3 text-secondary"></i>Nº Current Tasks: <strong><span id="modalCurrent"></span></strong>
+              </div>
+              <div class="ml-4 p-2">
+                <i class="fas fa-tasks mr-3 text-secondary"></i>Nº Registred Tasks: <strong> <span id="modalRegistered">0</span></strong>
+              </div>
+              <div class="ml-5 p-2">
+                <i class="fas fa-bolt mr-3 text-dark"></i>Nº Priority LOW: <strong> <span id="modalLow">0</span></strong>
+              </div>
+              <div class="ml-5 p-2">
+                <i class="fas fa-bolt mr-3 text-warning"></i>Nº Priority MEDIUM: <strong> <span id="modalMedium">0</span></strong>
+              </div>
+              <div class="ml-5 p-2">
+                <i class="fas fa-bolt mr-3 text-danger"></i>Nº Priority HIGH: <strong> <span id="modalHigh">0</span></strong>
+              </div>
+              <div class="ml-4 p-2">
+                <i class="fas fa-trophy mr-3 text-secondary"></i>Nº Completed Tasks:<strong> <span id="modalCompleted"></span></strong>
+              </div>
+              <div class="ml-4 p-2">
+                <i class="fas fa-clock mr-3 text-secondary"></i>Estimated time:<strong> <span id="modalEstimated"></span></strong>
+              </div>
+       
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
      <!-- SCRIPTS SECTION -->
+    
      <script src="./script.js"></script>
 </body>
 </html>

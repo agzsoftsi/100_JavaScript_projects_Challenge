@@ -65,6 +65,19 @@ footer a:hover{
     float: right;
 }
 
+.element-stats{
+    font-size: 32px;
+    float: right;
+    
+}
+
+.element-stats2{
+    font-size: 22px;
+    
+    
+}
+
+
 #product-list a{
     text-decoration: none;
 }

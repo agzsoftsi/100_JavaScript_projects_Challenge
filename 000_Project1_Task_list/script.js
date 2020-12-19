@@ -9,6 +9,11 @@ class Task{
 }
 
 
+        let registeredLow = 0 
+        let registeredMedium = 0
+        let registeredHigh = 0
+
+
 // creamos una Clase User Interface que gestione los metodos que queremos desarrollar en el programa
 class UI{
     //crear un elemento con los datos de tarea cuando se guarda
@@ -16,22 +21,38 @@ class UI{
 
         const taskList = document.getElementById("task-list")
         const element = document.createElement("div")
-        let colorPriority = "border-dark"
+        let colorPriority = ""
+        let textPriority = ""
+               
         
         if(task.priority == "Medium"){
             colorPriority =  "border-warning"
+            textPriority = "text-warning"
+            registeredMedium += 1
+            document.getElementById("modalMedium").innerText=registeredMedium
+            
         }
         else if(task.priority == "High"){
             colorPriority =  "border-danger"
+            textPriority = "text-danger"
+            registeredHigh += 1
+            document.getElementById("modalHigh").innerText=registeredHigh
+        }
+        else{
+            colorPriority = "border-dark"
+           textPriority = "text-dark"
+           registeredLow += 1
+            document.getElementById("modalLow").innerText=registeredLow
         }
         element.innerHTML = `
             <div class="card mb-2 text-center bg-light border ${colorPriority} animate__animated animate__backInRight">
                 <div class="card-body">
                     <strong>Task:</strong> ${task.name}
-                    <strong>Priority:</strong> ${task.priority}
                     <strong>Time:</strong> ${task.time}h
+                    <strong class="btn-task ${textPriority} element-close fas fa-star ml-2" title="${task.priority}" name="info"></strong>
                     <strong><a href="#" class="btn-task text-dark element-close far fa-check-circle ml-2" title="Completed Task" name="complete"></a></strong>
                     <strong><a href="#" class="btn-task text-dark element-close far fa-times-circle" title="Delete Task" name="delete"></a></strong>
+                    
                 </div>
             </div>
         
@@ -90,9 +111,9 @@ class UI{
 document.getElementById("task-form").addEventListener("submit", function (e){
     // Capturamos los datos del formulariuo y los asignamos a unas variables representativas
     const name = document.getElementById("name_t").value
-    const brand = document.getElementById("priority_t").value
-    const price = document.getElementById("time_t").value
-    const task = new Task(name, brand, price)
+    const priority = document.getElementById("priority_t").value
+    const time = document.getElementById("time_t").value
+    const task = new Task(name, priority, time)
 
     const ui = new UI()
     ui.addTask(task)
@@ -101,7 +122,17 @@ document.getElementById("task-form").addEventListener("submit", function (e){
     
     //console.log(product)
 
-    // Evita que el evento por default del submit refresque la pagina
+    // Registro cuantas tareas se han agregado
+    let registeredTask = 0
+    registeredTask += 1
+    document.getElementById("modalRegistered").innerText=registeredTask
+
+    
+    
+
+   // Evita que el evento por default del submit refresque la pagina
+    
+
     e.preventDefault();
 })
 
@@ -132,6 +163,8 @@ function countTask(t){
     countT += t
     
     document.getElementById("countVal").innerText=countT
+    document.getElementById("modalCurrent").innerText=countT
+    
 }
 
 // anexamos taks completed
@@ -140,6 +173,8 @@ function countTaskW(t){
     countTW += t
     
     document.getElementById("countValW").innerText=countTW
+    document.getElementById("modalCompleted").innerText=countTW
+    
 }
 
 // reestablecemos la App a 0
