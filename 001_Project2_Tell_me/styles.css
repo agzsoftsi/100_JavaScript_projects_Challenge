@@ -1,0 +1,76 @@
+.body-light{
+    
+    background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.body-dark{
+    background: #161718;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #161718);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #161718); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+.theme{
+    float: right;
+}
+
+.theme a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+.theme a:hover{
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+}
+
+
+.social-media{
+    font-size: 2rem;
+   
+}
+.fa-github-square{
+    color: rgba(20, 20, 20);
+}
+.fa-linkedin{
+    color: rgb(0, 85, 165);
+}   
+.fa-twitter-square{
+    color: dodgerblue;
+}
+.fa-youtube-square{
+    color: firebrick;
+}
+.fa-instagram-square{
+    color: rgb(236, 130, 236);
+}
+
+
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: none;
+}
+
+
+#task, #Avatar-container{
+    box-shadow: 5px 5px 10px #888888 !important;
+}
+
+
+#languageImage{
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+
+.avatar{
+    max-width: 100%;
+    max-height: 252px;
+}
+
+
