@@ -1,42 +1,48 @@
-var synth = window.speechSynthesis;
-var inputForm = document.querySelector('form');
-var inputTxt = document.querySelector('#text_t');
-var voiceSelect = document.querySelector('select');
+const synth = window.speechSynthesis;
+const inputForm = document.querySelector('form');
+const inputTxt = document.querySelector('#text_t');
+const voiceSelect = document.querySelector('select');
 
 //var pitch = document.querySelector('#pitch');
 //var pitchValue = document.querySelector('.pitch-value');
 //var rate = document.querySelector('#rate');
 //var rateValue = document.querySelector('.rate-value');
 
-var voices = [];
+let voices = [];
+
 
 function populateVoiceList() {
   voices = synth.getVoices().sort(function (a, b) {
+    // Ordena las voces por nombre ascendente
       const aname = a.name.toUpperCase(), bname = b.name.toUpperCase();
       if ( aname < bname ) return -1;
       else if ( aname == bname ) return 0;
       else return +1;
   });
-  var selectedIndex = voiceSelect.selectedIndex < 0 ? 0 : voiceSelect.selectedIndex;
+  let selectedIndex = voiceSelect.selectedIndex < 0 ? 0 : voiceSelect.selectedIndex;
   voiceSelect.innerHTML = '';
   
   
   // i = 0 if your one all languages
   // i = 19 for Microsoft Voices
-  for(let i = 1; i < voices.length-4 ; i++) {
-    var option = document.createElement('option');
-   // option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
+  for(let i = 0; i < voices.length ; i++) {
+    let option = document.createElement('option');
+    // List all Voices
+    //option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
     
-    
-      
-          // custom option of speechers CARLOS Google
+       // custom option of speechers CARLOS Google
 
         if (voices[i].lang === "id-ID"){
           option.textContent= "Batari - id-ID";
         } else if (voices[i].lang === "de-DE"){
           option.textContent= "Agathe - de-DE";
         } else if (voices[i].lang === "es-ES"){
-          option.textContent= "Sandra - es-ES";
+            if(voices[i].name === "Microsoft Helena Desktop - Spanish (Spain)"){
+              option.textContent= "Helena - es-ES";
+            }
+            else{
+              option.textContent= "Sandra - es-ES";
+            }
         } else if (voices[i].lang === "es-US"){
           option.textContent= "Milena - es-CO";
         } else if (voices[i].lang === "fr-FR"){
@@ -54,22 +60,25 @@ function populateVoiceList() {
         } else if (voices[i].name === "Google UK English Male"){
           option.textContent= "Carlos - en-UK";
         } else if (voices[i].lang === "en-US"){
-          option.textContent= "Rachel - en-US";
+          if(voices[i].name === "Microsoft Zira Desktop - English (United States)"){
+            option.textContent= "Zira - en-US";
+          }
+          else{
+            option.textContent= "Rachel - en-US";
+          }
+          
         } else if (voices[i].lang === "ru-RU"){
           option.textContent= "Karina - ru-RU";
         } else if (voices[i].lang === "hi-IN"){
           option.textContent= "Kumari - hi-IN";
-        } else if (voices[i].lang === "zh-TW"){
+        } else if (voices[i].lang === "zh-TW" || voices[i].lang === "zh-CN" || voices[i].lang === "zh-HK"){
           option.textContent= "Lian - zh-TW";
         } else if (voices[i].lang === "ja-JP"){
           option.textContent= "Natsumi - ja-JP";
         } else if (voices[i].lang === "ko-KR"){
           option.textContent= "Suni - ko-KR";
-        }    
+        }   
     
-
-
-
        /* if (voices[i].name === "Google Bahasa Indonesia"){
           option.textContent= "Batari - id-ID";
         }
@@ -91,9 +100,6 @@ function populateVoiceList() {
           option.textContent= "Sandra - ES-ES";
         }*/
     
-
-
-
     //custom option of speechers Microsoft
     /*if (voices[i].lang === "es-ES"){
       option.textContent = "Maria - ES";
@@ -102,9 +108,9 @@ function populateVoiceList() {
     }**/
     
     
-    if(voices[i].default) {
+    /*if(voices[i].default) {
       option.textContent += ' -- DEFAULT';
-    }
+    }*/
 
     option.setAttribute('data-lang', voices[i].lang);
     option.setAttribute('data-name', voices[i].name);
@@ -121,12 +127,12 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 
 function speak(){
     if (synth.speaking) {
-        //console.error('speechSynthesis.speaking');
+        console.error('speechSynthesis.speaking');
         //console.log(synth.speaking)
         return;
     }
     if (inputTxt.value !== '') {
-    var utterThis = new SpeechSynthesisUtterance(inputTxt.value);
+    let utterThis = new SpeechSynthesisUtterance(inputTxt.value);
     utterThis.onend = function (event) {
         console.log('SpeechSynthesisUtterance.onend');
         
@@ -135,8 +141,9 @@ function speak(){
     utterThis.onerror = function (event) {
         console.error('SpeechSynthesisUtterance.onerror');
     }
-    var selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
-    for(i = 0; i < voices.length ; i++) {
+    let selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
+    //console.log(selectedOption)
+    for(let i = 0; i < voices.length ; i++) {
       if(voices[i].name === selectedOption) {
         utterThis.voice = voices[i];
         avatarShow(voiceSelect.selectedOptions[0].getAttribute('data-lang'), voiceSelect.selectedOptions[0].getAttribute('data-name'))
@@ -145,6 +152,7 @@ function speak(){
     }
     //utterThis.pitch = pitch.value;
     //utterThis.rate = rate.value;
+    //console.log(utterThis)
     synth.speak(utterThis);
     
   }
@@ -157,7 +165,7 @@ inputForm.onsubmit = function(event) {
   speak();
 
   inputTxt.blur();
-  avatarShow();
+  //avatarShow();
 }
 
 /*pitch.onchange = function() {
@@ -190,6 +198,11 @@ function avatarShow(avatar, avatarN){
     document.getElementById("Avatar").innerHTML=`<div> <img src="./media/Avatars/es-ESOriginalAnimacion.gif" class="avatar text-center img-fluid animate__animated animate__fadeIn" name="es-ES" id="ImageAvatar"></div>`
     document.getElementById("languageImage").setAttribute("src","./media/flags/es-ES.fw.png")
   }
+  else if(avatar === "id-ID"){
+    document.getElementById("Avatar").innerHTML=`<div> <img src="./media/Avatars/id-IDOriginalAnimacion.gif" class="avatar text-center img-fluid animate__animated animate__fadeIn" name="id-ID" id="ImageAvatar"></div>`
+    document.getElementById("languageImage").setAttribute("src","./media/flags/id-ID.fw.png")
+  }
+ 
   else if(avatar === "en-US"){
     document.getElementById("Avatar").innerHTML=`<div> <img src="./media/Avatars/en-USOriginalAnimacion.gif" class="text-center img-fluid animate__animated animate__fadeIn" name="en-US" id="ImageAvatar"></div>`
     document.getElementById("languageImage").setAttribute("src","./media/flags/en-US.fw.png")
@@ -238,7 +251,7 @@ function avatarShow(avatar, avatarN){
     document.getElementById("Avatar").innerHTML=`<div> <img src="./media/Avatars/ru-RUOriginalAnimacion.gif" class="text-center img-fluid animate__animated animate__fadeIn" name="ru-RU" id="ImageAvatar"></div>`
     document.getElementById("languageImage").setAttribute("src","./media/flags/ru-RU.fw.png")
   }
-  else if(avatar === "zh-TW"){
+  else if(avatar === "zh-TW" || avatar === "zh-CN" || avatar === "zh-HK"){
     document.getElementById("Avatar").innerHTML=`<div> <img src="./media/Avatars/zh-TWOriginalAnimacion.gif" class="text-center img-fluid animate__animated animate__fadeIn" name="zh-TW" id="ImageAvatar"></div>`
     document.getElementById("languageImage").setAttribute("src","./media/flags/zh-TW.fw.png")
   }
@@ -273,10 +286,15 @@ function avatarShow(avatar, avatarN){
 
 function finishSpeech(r){
   //console.log("termino")
+  
   let avatar = document.getElementById("ImageAvatar").getAttribute("name")
 
   if(avatar === "es-ES"){
     document.getElementById("Avatar").innerHTML=`<div> <img src="./media/Avatars/es-ESOriginalAnimacionS.gif" class="avatar text-center img-fluid" name="es-ES" id="ImageAvatar"></div>`
+    
+  }
+  else if(avatar === "id-ID"){
+    document.getElementById("Avatar").innerHTML=`<div> <img src="./media/Avatars/id-IDOriginalAnimacionS.gif" class="text-center img-fluid" name="en-US" id="ImageAvatar"></div>`
     
   }
   else if(avatar === "en-US"){
