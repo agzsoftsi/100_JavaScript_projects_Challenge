@@ -15,6 +15,9 @@ Support 16 Languages, each one with an Avatar
 - Automatic language changer
 - Restart App function
 - Change a basic theme (light: by Default, dark)
+- Support for Google Chrome 21 languages
+- Suport for Firefox 2 languages
+- Android is Alfa, need more Support
 
 ## Access Link
 
@@ -22,7 +25,7 @@ Support 16 Languages, each one with an Avatar
 
 ## Download APK
 
-[Download](https://drive.google.com/file/d/15aiHPzrDrNeZ5muwXWxkDSLmDFHSOAnn/view?usp=sharing)
+
 
 ## Technologies:
 
