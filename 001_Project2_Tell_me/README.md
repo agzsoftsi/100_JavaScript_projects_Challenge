@@ -39,4 +39,4 @@ Support 16 Languages, each one with an Avatar
 
 ## Video DEMO
 
-[DEMO](https://youtu.be/Y2xLfqu4DCQ)
+[DEMO](https://www.youtube.com/watch?v=DfFbCRuz5oM)
