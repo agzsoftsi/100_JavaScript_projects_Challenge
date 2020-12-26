@@ -36,4 +36,4 @@ Phrase generator App is a Simple tool to create phrases in images that you can p
 
 ## Video DEMO
 
-[DEMO](https://www.youtube.com/watch?v=DfFbCRuz5oM)
+[DEMO](https://youtu.be/vMhUC1angr0)
