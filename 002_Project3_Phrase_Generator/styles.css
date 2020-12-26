@@ -1,0 +1,177 @@
+.body-light{
+    
+
+
+background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.body-dark{
+background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.theme{
+    float: right;
+}
+
+.theme a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+.theme a:hover{
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+}
+
+.social-media{
+    font-size: 2rem;
+    color: dodgerblue;
+   
+}
+
+
+
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+
+#task{
+    box-shadow: 5px 5px 10px #888888 !important;
+}
+
+#logoControl{
+    font-size: larger;    
+    float: right;
+}
+
+.ired[type=range]::-webkit-slider-thumb {
+     background: red !important; }
+     .ired[type=range]::-moz-range-thumb {
+        background: red !important; }
+     
+
+.igreen[type=range]::-webkit-slider-thumb {
+        background: green !important; }
+        .igreen[type=range]::-moz-range-thumb {
+            background: green !important; }
+        
+.iblue[type=range]::-webkit-slider-thumb {
+            background: blue !important; }
+            .iblue[type=range]::-moz-range-thumb {
+                background: blue !important; }
+
+#fontView{
+    float: right;
+}
+
+#backView{
+    float:right;
+}
+
+.colorView{
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: black solid 1px;
+    float:right;
+    
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Bold.ttf");
+    }
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("./fonts/PlayfairDisplay-Bold.ttf");
+    }
+
+@font-face {
+    font-family: 'Caveat';
+    src: url("./fonts/Caveat-Bold.ttf");
+    }
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./fonts/Orbitron-Bold.ttf");
+       }
+
+@font-face {
+        font-family: "Dancing Script";
+        src: url("./fonts/DancingScript-Bold.ttf");
+        }
+    
+@font-face {
+        font-family: "MuseoModerno";
+        src: url("./fonts/MuseoModerno-Bold.ttf");
+        }
+    
+@font-face {
+        font-family: 'Grenze Gotisch';
+        src: url("./fonts/GrenzeGotisch-Bold.ttf");
+        }
+    
+@font-face {
+        font-family: "Grandstander";
+        src: url("./fonts/Orbitron-Bold.ttf");
+           }
+@font-face {
+        font-family: 'Cinzel';
+        src: url("./fonts/Cinzel-Bold.ttf");
+            }
+        
+@font-face {
+        font-family: "Texturina";
+        src: url("./fonts/Texturina_18pt-BoldItalic.ttf");
+        }
+
+
+.font1{
+      font-family: "Roboto";
+}
+
+.font2{
+    font-family: "Playfair Display";
+}
+
+.font3{
+    font-family: "Caveat";
+}
+.font4{
+    font-family: "Orbitron";
+}
+.font5{
+    font-family: "Dancing Script";
+}
+
+.font6{
+  font-family: "MuseoModerno";
+}
+
+.font7{
+  font-family: "Grenze Gotisch";
+}
+.font8{
+  font-family: "Grandstander";
+}
+
+.font9{
+    font-family: "Cinzel";
+  }
+.font10{
+    font-family: "Texturina";
+  }
+
+

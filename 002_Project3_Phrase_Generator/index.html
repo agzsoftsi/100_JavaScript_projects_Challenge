@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICON SECTION -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon-16x16.png">
+    <link rel="manifest" href="./media/site.webmanifest">
+    <link rel="mask-icon" href="./media/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- PRIMARY TAGS SECTION -->
+    <meta property="card" content="summary_large_image">
+    <meta property="url" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/001_Project2_Tell_me/">
+    <meta name="title" content="Phrase Generator App®">
+    <meta name="description" content="Phrase generator App is a Simple tool to create phrases in images that you can personalize, download and share.">
+    <meta property="image" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/001_Project2_Tell_me/media/Logomedia.fw.png">
+
+    <!-- PRIMARY TAGS TWITTER SECTION -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/001_Project2_Tell_me/">
+    <meta property="twitter:title" content="Phrase Generator App®">
+    <meta property="twitter:description" content="Phrase generator App is a Simple tool to create phrases in images that you can personalize, download and share.">
+    <meta property="twitter:image" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/001_Project2_Tell_me/media/Logomedia.fw.png">
+    
+    <!-- CSS SECTION -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- SCRIPTS SECTION -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <title>Phrase Generator App</title>
+</head>
+<body id="body-app" class="body-light">
+    <!-- HEADER SECTION -->
+    <header>
+       <!-- Image and text -->
+            <nav class="navbar navbar-dark bg-dark">
+                <div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./media/favicon-32x32.png" alt="Logo" class="d-inline-block align-top">
+                    Phrase Generator App
+                </a>
+                </div>
+                <div class="theme">
+                    <a href="#" title="Restart" onclick="window.location.reload();"> <i class="fas fa-undo mr-2 text-light"></i></a>
+                    <a href="#" title="Light" class="light_t"> <i class="fas fa-sun mr-2"></i> </a>
+                   <a href="#" title="Dark" class="dark_t"><i class="fas fa-moon"></i> </a>
+                </div>
+            </nav>
+            
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="mb-5">
+        <div class="container">
+            <div id="App" class="row pt-5 justify-content-center">
+                <div class="col-md-6">
+                    <div class="card border border-dark mb-3 animate__animated animate__zoomIn">
+                        <div class="card-header bg-dark">
+                            <h5 class="card-title text-light"> Generator Panel <i id="logoControl" class="fas fa-pencil-ruler text-light"></i></h5>
+                            
+                        </div>
+                        
+                          <form id="message-form" class="card-body">
+                              <div class="form-group row align-items-center">
+                                 <div class="mr-2 ml-3"> <i class="fas fa-keyboard text-dark"></i></div>
+                                 <div class="col"> <input type="text" id="text_t" placeholder="Message" class="form-control"></div>
+                              </div>
+                              <div class="form-group row align-items-center">
+                                <div class="mr-2 ml-3"> <i class="fas fa-user-alt text-dark"></i></div>
+                                <div class="col"> <input type="text" id="author_t" placeholder="Author" class="form-control"></div>
+                             </div>
+                              <div class="form-group row align-items-center">
+                                <div class="mr-2 ml-3"><i class="fas fa-font text-dark"></i></div>
+                                <div class="col"><select id="fonts" class="form-control">
+                                    <option value="Roboto" class="font1">Roboto</option>
+                                    <option value="Playfair Display" class="font2">Playfair Display</option>
+                                    <option value="Caveat" class="font3">Caveat</option>
+                                    <option value="Orbitron" class="font4">Orbitron</option>
+                                    <option value="Dancing Script" class="font5">Dancing Script</option>
+                                    <option value="MuseoModerno" class="font6">MuseoModerno</option>
+                                    <option value="Grenze Gotisch" class="font7">Grenze Gotisch</option>
+                                    <option value="Grandstander" class="font8">Grandstander</option>
+                                    <option value="Cinzel" class="font9">Cinzel</option>
+                                    <option value="Texturina" class="font10">Texturina</option>
+                                </select></div>
+                              </div>
+                              <div class="form-group row align-items-center">
+                                <div class="mr-2 ml-3"><i class="fas fa-text-height text-dark"></i></div>
+                                <div class="col"><select id="fontSize" class="form-control">
+                                    <option value="8px">8px</option>
+                                    <option value="12px">12px</option>
+                                    <option value="16px">16px</option>
+                                    <option value="20px">20px</option>
+                                    <option value="24px">24px</option>
+                                    <option value="28px">28px</option>
+                                    <option value="32px">32px</option>
+                                    <option value="36px">36px</option>
+                                </select></div>
+                              </div>
+                             <!-- <div class="form-group row align-items-center">
+                                <div class="mr-2 ml-3"><i class="fas fa-align-justify text-dark"></i></div>
+                                <div class="col"><select id="textAlign" class="form-control">
+                                    <option value="center">Center</option>
+                                    <option value="left">Left</option>
+                                    <option value="right">Right</option>
+                                    
+                                </select></div>
+                              </div>-->
+                              <div id="fontColor-form" class="form-group row align-items-center">
+                                <div class="mr-2 ml-3"><i class="fas fa-palette text-dark"></i></div>
+                                <div class="col"><label for="formControlRange">Font Color</label> <div id="fontView"><div class='colorView'></div></div>
+                                    <input type="range" class="custom-range ired" id="fontColorR" min="0" max="255" value="0" step="1">
+                                    <input type="range" class="custom-range igreen" id="fontColorG" min="0" max="255" value="0" step="1">
+                                    <input type="range" class="custom-range iblue" id="fontColorB" min="0" max="255" value="0" step="1">
+                              </div>
+                              </div>
+
+                              <div id="backcolor-form" class="form-group row align-items-center">
+                                <div class="mr-2 ml-3"><i class="fas fa-fill-drip text-dark"></i></div>
+                                <div class="col"><label for="formControlRange">Background Color</label><div id="backView"><div class='colorView'></div></div>
+                                    <input type="range" class="custom-range ired" id="backColorR" min="0" max="255" value="0" step="1">
+                                    <input type="range" class="custom-range igreen" id="backColorG" min="0" max="255" value="0" step="1">
+                                    <input type="range" class="custom-range iblue" id="backColorB" min="0" max="255" value="0" step="1">
+                              </div>
+                              </div>
+
+                              <input type="submit" value="Generate" class="btn bg-dark text-light btn-block font-weight-bold"> 
+                          </form>
+                        
+                      </div>
+                      
+                </div>
+                <div class="col-md-6 row align-items-center w-100">
+                    <div class="card border border-dark mb-3 animate__animated animate__slideInRight" id="preview">
+                        <div class="card-body">
+                            <div>
+                                <canvas id="messageCanvas" class="img-fluid" width="480" height="480"></canvas>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer bg-dark">
+                            <h5 class="card-title text-light"> Preview Panel <a href="#" id="downloadMessage"><i id="logoControl" class="fas fa-download text-light"></i></a></h5>
+                            
+                        </div>
+                    </div>
+
+
+                   
+                </div>
+                <!--
+                <div class="col-md-6 card border border-dark mb-3 animate__animated animate__slideInRight" id="preview"></div>
+                -->
+        </div>
+    </main>
+
+    <footer class="fixed-bottom">
+        <!-- Image and text -->
+        <nav class="navbar text-light bg-dark">
+            <div>
+            <a href="index.html">
+                <img src="./media/favicon-32x32.png" width="32px" height="32px" alt="Logo">
+            </a>
+            Phrase Generator App® 2020
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/agzsoftsi" title="Follow on Github" target="_blank"> <i class="fab fa-github-square"></i> </a>
+                <a href="https://www.linkedin.com/in/carlos-andres-garcia-morales-036992183/" title="Follow on linkedin" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+                <a href="https://twitter.com/karlgarmor" title="Follow on Twitter" target="_blank"> <i class="fab fa-twitter-square"></i> </a>
+                <a href="https://www.youtube.com/channel/UCNXFDfsJ9PjCdE9dZBGGbSA/about" title="Follow on Youtube" target="_blank"> <i class="fab fa-youtube-square"></i> </a>
+                <a href="https://www.instagram.com/karlgarmor/" title="Follow on Instagram" target="_blank"> <i class="fab fa-instagram-square"></i> </a>
+
+            </div>
+        </nav>
+    </footer>
+     <!-- SCRIPTS SECTION -->
+    
+     <script src="./script.js"></script>
+</body>
+</html>

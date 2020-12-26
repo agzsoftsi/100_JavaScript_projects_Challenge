@@ -19,6 +19,7 @@ Feel free enjoy, Fork and Recreate those projects
 
 - [000_Project1_Task_list](/000_Project1_Task_list)
 - [001_Project2_Tell_me](/001_Project2_Tell_me)
+- [002_Project3_Phrase_Generator](002_Project3_Phrase_Generator/)
 
 
 
