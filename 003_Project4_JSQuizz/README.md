@@ -2,23 +2,25 @@
 
 ## Description
 
-Phrase generator App is a Simple tool to create phrases in images that you can personalize, download and share.
+JSquizz App is a basic WebApp to testing your knowledge about the JavaScript basics, earn a Badges and learn.
 
 ## :books: Content
 
 ## Version: 1.0
 
 - Working on web and android like an App
-- support 10 types of fonts
-- Preview generated Phrase
-- download function working
+- 3 levels implemneted
+- 3 badges created to share on twitter
+- 15 random questions for level 1
+- 25 random questions for level 2
+- 45 random questions for level 3
+- questions, answers and checker tested
 - Restart App function
-- Change a basic theme (light: by Default, dark)
 - Support for Google Chrome, Firefox, Android
 
 ## Access Link
 
-[Run App](https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/002_Project3_Phrase_Generator/index.html)
+[Run App](https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/003_Project4_JSQuizz/index.html)
 
 ## Download APK
 
@@ -32,7 +34,7 @@ Phrase generator App is a Simple tool to create phrases in images that you can p
 - [Boostrap 4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 - [animate](https://animate.style/)
 - [fontawesome](https://fontawesome.com/)
-- [canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
+
 
 ## Video DEMO
 
