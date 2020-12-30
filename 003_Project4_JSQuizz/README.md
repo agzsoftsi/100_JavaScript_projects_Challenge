@@ -2,7 +2,7 @@
 
 ## Description
 
-JSquizz App is a basic WebApp to testing your knowledge about the JavaScript basics, earn a Badges and learn.
+JSquizz App is a basic WebApp to testing your knowledge about the JavaScript basics, earn Badges and learn.
 
 ## :books: Content
 

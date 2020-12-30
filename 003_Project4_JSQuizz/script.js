@@ -8,7 +8,7 @@ document.getElementById("challenge1").addEventListener("click", function (){
 
 document.getElementById("challenge2").addEventListener("click", function (){
     closeIntroModal(2)
-    document.getElementById("levelChallenge").setAttribute("src","./media/Silver.fw.png")
+    document.getElementById("levelChallenge").setAttribute("src","./media/silver.fw.png")
    
 })
 
