@@ -38,4 +38,4 @@ JSquizz App is a basic WebApp to testing your knowledge about the JavaScript bas
 
 ## Video DEMO
 
-[DEMO](https://youtu.be/vMhUC1angr0)
+[DEMO](https://youtu.be/-ErPMKkTzxQ)
