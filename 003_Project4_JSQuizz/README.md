@@ -24,7 +24,7 @@ JSquizz App is a basic WebApp to testing your knowledge about the JavaScript bas
 
 ## Download APK
 
-[download](https://drive.google.com/file/d/1oGjZ3-wjAtifu6MBrRueWwPZlXJh0zLd/view?usp=sharing)
+[download](https://drive.google.com/file/d/1PmLOG2VIch7pJWmkl2oBC9U2uiGjX0uK/view?usp=sharing)
 
 ## Technologies:
 
