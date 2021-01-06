@@ -1,0 +1,1360 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Bold.ttf");
+    }
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("./fonts/PlayfairDisplay-Bold.ttf");
+    }
+
+@font-face {
+    font-family: 'Caveat';
+    src: url("./fonts/Caveat-Bold.ttf");
+    }
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./fonts/Orbitron-Bold.ttf");
+       }
+
+@font-face {
+        font-family: "Dancing Script";
+        src: url("./fonts/DancingScript-Bold.ttf");
+        }
+    
+@font-face {
+        font-family: "MuseoModerno";
+        src: url("./fonts/MuseoModerno-Bold.ttf");
+        }
+    
+@font-face {
+        font-family: 'Grenze Gotisch';
+        src: url("./fonts/GrenzeGotisch-Bold.ttf");
+        }
+    
+@font-face {
+        font-family: "Grandstander";
+        src: url("./fonts/Orbitron-Bold.ttf");
+           }
+@font-face {
+        font-family: 'Cinzel';
+        src: url("./fonts/Cinzel-Bold.ttf");
+            }
+        
+@font-face {
+        font-family: "Texturina";
+        src: url("./fonts/Texturina_18pt-BoldItalic.ttf");
+        }
+
+
+.font1{
+      font-family: "Roboto";
+}
+
+.font2{
+    font-family: "Playfair Display";
+}
+
+.font3{
+    font-family: "Caveat";
+}
+.font4{
+    font-family: "Orbitron";
+}
+.font5{
+    font-family: "Dancing Script";
+}
+
+.font6{
+  font-family: "MuseoModerno";
+}
+
+.font7{
+  font-family: "Grenze Gotisch";
+}
+.font8{
+  font-family: "Grandstander";
+}
+
+.font9{
+    font-family: "Cinzel";
+  }
+.font10{
+    font-family: "Texturina";
+  }
+
+
+.body-light{
+    
+
+
+background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.body-dark{
+background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.theme{
+    float: right;
+}
+
+.theme a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+.theme a:hover{
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+}
+
+.social-media{
+    font-size: 2rem;
+    color: dodgerblue;
+   
+}
+
+
+
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+
+
+
+#logoControl{
+    font-size: larger;    
+    float: right;
+}
+
+input[type="radio"]
+{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  opacity: 0.8;
+  vertical-align: middle;
+  
+}
+input[type="radio"]:hover
+{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  opacity: 1;
+  
+}
+
+
+
+/* Styles for Bgcolor selector */
+.bg1 input[type='radio']:after {
+    width: 25px;
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 0.5px solid rgb(192, 192, 192);
+    
+}
+
+.bg1 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bg2 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #FEC803;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bg2 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #FEC803;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bg3 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #CD4803;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bg3 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #CD4803;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bg4 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #741188;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bg4 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #741188;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bg5 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #BBB1D6;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bg5 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #BBB1D6;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bg6 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #3780C5;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bg6 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #3780C5;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bg7 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #003980;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bg7 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #003980;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bg8 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #4DB592;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bg8 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #4DB592;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bg9 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #02822D;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bg9 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #02822D;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bg10 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #333333;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bg10 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #333333;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+
+/* Styles for forecolor selector */
+.fg1 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 0.5px solid rgb(192, 192, 192);
+    
+}
+
+.fg1 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.fg2 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #FEC803;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.fg2 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #FEC803;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.fg3 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #CD4803;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.fg3 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #CD4803;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.fg4 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #741188;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.fg4 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #741188;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.fg5 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #BBB1D6;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.fg5 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #BBB1D6;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.fg6 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #3780C5;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.fg6 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #3780C5;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.fg7 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #003980;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.fg7 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #003980;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.fg8 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #4DB592;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.fg8 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #4DB592;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.fg9 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #02822D;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.fg9 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #02822D;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.fg10 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #333333;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.fg10 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #333333;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+
+/* Styles body color selector */
+.bdg1 input[type='radio']:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #BBBBBB;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bdg1 input[type='radio']:checked:after {
+    width: 40px;
+    height: 40px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #BBBBBB;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bdg2 input[type='radio']:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color:#E7D5C7;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bdg2 input[type='radio']:checked:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color:#E7D5C7;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bdg3 input[type='radio']:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #E3C3AC;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bdg3 input[type='radio']:checked:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #E3C3AC;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bdg4 input[type='radio']:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #C29F81;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bdg4 input[type='radio']:checked:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #C29F81;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bdg5 input[type='radio']:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color:#754839;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bdg5 input[type='radio']:checked:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color:#754839;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.bdg6 input[type='radio']:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #4F3127;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.bdg6 input[type='radio']:checked:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: bolder;
+    color: white;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #4F3127;
+    content: '\f1ae';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+/* eyebrows Styles*/
+
+.eyeb input[type='radio']:after, .eye input[type='radio']:after  {
+    color: white;
+    width: 60px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.eyeb input[type='radio']:checked:after, .eye input[type='radio']:checked:after {
+    color: white;
+    width: 60px;
+    height: 40px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.eyeb1 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyebrowsample1.gif");
+}
+.eyeb2 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyebrowsample2.gif");
+}
+.eyeb3 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyebrowsample3.gif");
+}
+.eyeb4 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyebrowsample4.gif");
+}
+.eyeb5 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyebrowsample5.gif");
+}
+.eyeb6 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyebrowsample6.gif");
+}
+
+
+.eyebg1 input[type='radio']:after{
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.eyebg1 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.eyebg2 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #8C6900;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.eyebg2 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #8C6900;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.eyebg3 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #FFC926;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.eyebg3 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #FFC926;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.eyebg4 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #FFFF00;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.eyebg4 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #FFFF00;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.eyebg5 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid rgb(223, 223, 223);
+    
+}
+
+.eyebg5 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.eyebg6 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #FF8000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.eyebg6 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #FF8000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.eyebg7 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #FF0000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.eyebg7 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #FF0000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.eyebg8 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #FF00FF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.eyebg8 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #FF00FF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.eyebg9 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #007FFF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.eyebg9 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #007FFF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.eyebg10 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #36D900;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.eyebg10 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #36D900;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+
+/* eyes styles*/
+
+.eye1 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyeample1.jpg");
+}
+.eye2 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyeample2.jpg");
+}
+.eye3 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyeample3.jpg");
+}
+.eye4 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyeample4.jpg");
+}
+.eye5 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyeample5.jpg");
+}
+.eye6 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyeample6.jpg");
+}
+
+/* mouth styles */
+.mouth1 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/mouthsample1.gif");
+}
+.mouth2 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/mouthsample2.gif");
+}
+.mouth3 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/mouthsample3.gif");
+}
+.mouth4 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/mouthsample4.gif");
+}
+.mouth5 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/mouthsample5.gif");
+}
+.mouth6 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/mouthsample6.gif");
+}
+.mouth7 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/mouthsample7.gif");
+}
+.mouth8 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/mouthsample8.gif");
+}
+.mouth9 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/mouthsample9.gif");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#g0{
+    background-color: #e65ae6;
+}
+#g1{
+    background-color: #3539fa;
+}
+
+
+
+
+
+    .nav .nav-item .nav-link{
+    background-color:rgba(182, 182, 182, 0.178);
+    opacity: 0.85;
+    color: rgb(17, 2, 2) !important;
+    margin-left: 1px;
+    }
+
+    .nav .nav-item:hover .nav-link, .nav .nav-item:active .nav-link{
+        background-color:rgb(36, 36, 36) !important;
+        opacity: 1;
+        color: rgb(212, 212, 212) !important;
+        }
+
+    
+        
+
+
+
