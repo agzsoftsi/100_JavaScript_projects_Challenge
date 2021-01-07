@@ -1678,6 +1678,115 @@ input[type="radio"]:hover
 }
 
 
+/*print styles*/
+.printb1 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample1.gif");
+}
+.printb2 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample2.gif");
+}
+.printb3 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample3.gif");
+}
+.printb4 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample4.gif");
+}
+.printb5 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample5.gif");
+}
+.printb6 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample6.gif");
+}
+.printb7 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample7.gif");
+}
+.printb8 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample8.gif");
+}
+.printb9 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample9.gif");
+}
+.printb10 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample10.gif");
+}
+.printb11 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample11.gif");
+}
+.printb12 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample12.gif");
+}
+.printb13 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample13.gif");
+}
+.printb14 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample14.gif");
+}
+.printb15 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample15.gif");
+}
+.printb16 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample16.gif");
+}
+.printb17 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample17.gif");
+}
+.printb18 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample18.gif");
+}
+.printb19 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample19.gif");
+}
+.printb20 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample20.gif");
+}
+.printb21 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample21.gif");
+}
+.printb22 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample22.gif");
+}
+.printb23 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample23.gif");
+}
+.printb24 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample24.gif");
+}
+.printb25 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample25.gif");
+}
+.printb26 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample26.gif");
+}
+.printb27 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample27.gif");
+}
+.printb28 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample28.gif");
+}
+.printb29 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample29.gif");
+}
+.printb30 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample30.gif");
+}
+.printb31 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample31.gif");
+}
+.printb32 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample32.gif");
+}
+.printb33 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample33.gif");
+}
+.printb34 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample34.gif");
+}
+.printb35 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample35.gif");
+}
+.printb36 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample36.gif");
+}
 
 
 #g0{

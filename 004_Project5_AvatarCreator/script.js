@@ -95,8 +95,11 @@ document.getElementById("avatar-form").addEventListener("submit", function(e){
   let beardColor = document.getElementById("avatar-form").beardg.value
   let shirt = document.getElementById("avatar-form").shirt.value
   let shirtColor = document.getElementById("avatar-form").shirtg.value
+  let print = document.getElementById("avatar-form").print.value
 
-  //["bgcolor","avatarName","colorName","bodycolor","eyebrowstype","eyebrowsColor","eyetype","eyeColor","mouthtype","hairtype","haircolor","beardtype","beardcolor","shirttype","shirtcolor"]
+  /*["bgcolor","avatarName","colorName","bodycolor","eyebrowstype","eyebrowsColor",
+  "eyetype","eyeColor","mouthtype","hairtype","haircolor","beardtype","beardcolor",
+  "shirttype","shirtcolor","print"]*/
   data.push(bColor)
   data.push(avatarName)
   data.push(fColor)
@@ -112,6 +115,7 @@ document.getElementById("avatar-form").addEventListener("submit", function(e){
   data.push(beardColor)
   data.push(shirt)
   data.push(shirtColor)
+  data.push(print)
 
  
 
@@ -262,7 +266,16 @@ function avatarGenerate(data){
             ctxShirt.drawImage(imgShirt, 0, 0);
           }
 
+             // print create
 
+             let ctxPrint= canvas.getContext("2d");
+             let imgPrint = new Image();
+             
+               imgPrint.src = "./media/CharacterMan/sample1"+data[15]+".png";
+               ctxPrint.drawImage(imgPrint, 0, 0);
+     
+
+            
 
                     // beard create
                     let ctxBeard= canvas.getContext("2d");
