@@ -1312,19 +1312,370 @@ input[type="radio"]:hover
 }
 
 
+/* hair styles */
+
+.hairb input[type='radio']:after {
+    color: white;
+    width: 60px;
+    height: 60px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.hairb input[type='radio']:checked:after{
+    color: white;
+    width: 60px;
+    height: 60px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.hairb1 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample1.gif");
+}
+.hairb2 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample2.gif");
+}
+.hairb3 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample3.gif");
+}
+.hairb4 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample4.gif");
+}
+.hairb5 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample5.gif");
+}
+.hairb6 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample6.gif");
+}
+.hairb7 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample7.gif");
+}
+.hairb8 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample8.gif");
+}
+.hairb9 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample9.gif");
+}
+.hairb10 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample10.gif");
+}
+.hairb11 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample11.gif");
+}
 
 
 
+/*beards style*/
+.beardb1 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/beardsample1.gif");
+}
+.beardb2 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/beardsample2.gif");
+}
+.beardb3 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/beardsample3.gif");
+}
+.beardb4 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/beardsample4.gif");
+}
+.beardb5 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/beardsample5.gif");
+}
+.beardb6 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/beardsample6.gif");
+}
+.beardb7 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/beardsample7.gif");
+}
+.beardb8 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/beardsample8.gif");
+}
+.beardb9 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/beardsample9.gif");
+}
+.beardb10 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/beardsample10.gif");
+}
 
 
 
+/* shirt styles */
+.shirtg1 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #555555;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
 
+.shirtg1 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #555555;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+.shirtg2 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #003366;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
 
+.shirtg2 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #003366;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+.shirtg3 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color:#00661A;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
 
+.shirtg3 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #00661A;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+.shirtg4 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #00BFFF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
 
+.shirtg4 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #00BFFF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+.shirtg5 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #59B200;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
 
+.shirtg5 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #59B200;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+.shirtg6 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #B20000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
 
+.shirtg6 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #B20000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+.shirtg7 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #D9A300;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
 
+.shirtg7 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #D9A300;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+.shirtg8 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #FFBFFF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.shirtg8 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #FFBFFF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.shirtg9 input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #EEE;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.shirtg9 input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    border-radius: 5x;
+    position: relative;
+    background-color: #EEE;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.shirtb1 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/shirtsample1.gif");
+}
+.shirtb2 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/shirtsample2.gif");
+}
+.shirtb3 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/shirtsample3.gif");
+}
+.shirtb4 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/shirtsample4.gif");
+}
+.shirtb5 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/shirtsample5.gif");
+}
+.shirtb6 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/shirtsample6.gif");
+}
 
 
 

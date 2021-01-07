@@ -89,8 +89,14 @@ document.getElementById("avatar-form").addEventListener("submit", function(e){
   let eye = document.getElementById("avatar-form").eye.value
   let eyeColor = document.getElementById("avatar-form").eyeg.value
   let mouth = document.getElementById("avatar-form").mouth.value
+  let hair = document.getElementById("avatar-form").hair.value
+  let hairColor = document.getElementById("avatar-form").hairg.value
+  let beard = document.getElementById("avatar-form").beard.value
+  let beardColor = document.getElementById("avatar-form").beardg.value
+  let shirt = document.getElementById("avatar-form").shirt.value
+  let shirtColor = document.getElementById("avatar-form").shirtg.value
 
-  //["bgcolor","avatarName","colorName","bodycolor","eyebrowstype","eyebrowsColor","eyetype","eyeColor","mouthtype"]
+  //["bgcolor","avatarName","colorName","bodycolor","eyebrowstype","eyebrowsColor","eyetype","eyeColor","mouthtype","hairtype","haircolor","beardtype","beardcolor","shirttype","shirtcolor"]
   data.push(bColor)
   data.push(avatarName)
   data.push(fColor)
@@ -100,6 +106,12 @@ document.getElementById("avatar-form").addEventListener("submit", function(e){
   data.push(eye)
   data.push(eyeColor)
   data.push(mouth)
+  data.push(hair)
+  data.push(hairColor)
+  data.push(beard)
+  data.push(beardColor)
+  data.push(shirt)
+  data.push(shirtColor)
 
  
 
@@ -189,7 +201,104 @@ function avatarGenerate(data){
         ctxMouth.drawImage(imgMouth, 0, 0);
                
     
-  
+          // hair create
+          let ctxHair= canvas.getContext("2d");
+          let imgHair = new Image();
+          if(data[9]=="hair_1"){
+            imgHair.src = "./media/CharacterMan/sample1hairC_1.gif";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }else if(data[9]=="hair_2"){
+            imgHair.src = "./media/CharacterMan/sample2"+data[10]+".png";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }else if(data[9]=="hair_3"){
+            imgHair.src = "./media/CharacterMan/sample3"+data[10]+".png";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }else if(data[9]=="hair_4"){
+            imgHair.src = "./media/CharacterMan/sample4"+data[10]+".png";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }else if(data[9]=="hair_5"){
+            imgHair.src = "./media/CharacterMan/sample5"+data[10]+".png";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }else if(data[9]=="hair_6"){
+            imgHair.src = "./media/CharacterMan/sample6"+data[10]+".png";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }else if(data[9]=="hair_7"){
+            imgHair.src = "./media/CharacterMan/sample7"+data[10]+".png";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }else if(data[9]=="hair_8"){
+            imgHair.src = "./media/CharacterMan/sample8"+data[10]+".png";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }else if(data[9]=="hair_9"){
+            imgHair.src = "./media/CharacterMan/sample9"+data[10]+".png";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }else if(data[9]=="hair_10"){
+            imgHair.src = "./media/CharacterMan/sample10"+data[10]+".png";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }else if(data[9]=="hair_11"){
+            imgHair.src = "./media/CharacterMan/sample11"+data[10]+".png";
+            ctxHair.drawImage(imgHair, 0, 0);
+          }
+          
+          // shirt create
+          let ctxShirt= canvas.getContext("2d");
+          let imgShirt = new Image();
+          if(data[13]=="shirt_1"){
+            imgShirt.src = "./media/CharacterMan/sample1"+data[14]+".png";
+            ctxShirt.drawImage(imgShirt, 0, 0);
+          }else if(data[13]=="shirt_2"){
+            imgShirt.src = "./media/CharacterMan/sample2"+data[14]+".png";
+            ctxShirt.drawImage(imgShirt, 0, 0);
+          }else if(data[13]=="shirt_3"){
+            imgShirt.src = "./media/CharacterMan/sample3"+data[14]+".png";
+            ctxShirt.drawImage(imgShirt, 0, 0);
+          }else if(data[13]=="shirt_4"){
+            imgShirt.src = "./media/CharacterMan/sample4"+data[14]+".png";
+            ctxShirt.drawImage(imgShirt, 0, 0);
+          }else if(data[13]=="shirt_5"){
+            imgShirt.src = "./media/CharacterMan/sample5"+data[14]+".png";
+            ctxShirt.drawImage(imgShirt, 0, 0);
+          }else if(data[13]=="shirt_6"){
+            imgShirt.src = "./media/CharacterMan/sample6"+data[14]+".png";
+            ctxShirt.drawImage(imgShirt, 0, 0);
+          }
+
+
+
+                    // beard create
+                    let ctxBeard= canvas.getContext("2d");
+                    let imgBeard = new Image();
+                    if(data[11]=="beard_1"){
+                      imgBeard.src = "./media/CharacterMan/sample1beardC_1.gif";
+                      ctxBeard.drawImage(imgBeard, 0, 0);
+                    }else if(data[11]=="beard_2"){
+                      imgBeard.src = "./media/CharacterMan/sample2"+data[12]+".png";
+                      ctxBeard.drawImage(imgBeard, 0, 0);
+                    }else if(data[11]=="beard_3"){
+                      imgBeard.src = "./media/CharacterMan/sample3"+data[12]+".png";
+                      ctxBeard.drawImage(imgBeard, 0, 0);
+                    }else if(data[11]=="beard_4"){
+                      imgBeard.src = "./media/CharacterMan/sample4"+data[12]+".png";
+                      ctxBeard.drawImage(imgBeard, 0, 0);
+                    }else if(data[11]=="beard_5"){
+                      imgBeard.src = "./media/CharacterMan/sample5"+data[12]+".png";
+                      ctxBeard.drawImage(imgBeard, 0, 0);
+                    }else if(data[11]=="beard_6"){
+                      imgBeard.src = "./media/CharacterMan/sample6"+data[12]+".png";
+                      ctxBeard.drawImage(imgBeard, 0, 0);
+                    }else if(data[11]=="beard_7"){
+                      imgBeard.src = "./media/CharacterMan/sample7"+data[12]+".png";
+                      ctxBeard.drawImage(imgBeard, 0, 0);
+                    }else if(data[11]=="beard_8"){
+                      imgBeard.src = "./media/CharacterMan/sample8"+data[12]+".png";
+                      ctxBeard.drawImage(imgBeard, 0, 0);
+                    }else if(data[11]=="beard_9"){
+                      imgBeard.src = "./media/CharacterMan/sample9"+data[12]+".png";
+                      ctxBeard.drawImage(imgBeard, 0, 0);
+                    }
+                    else if(data[11]=="beard_10"){
+                      imgBeard.src = "./media/CharacterMan/sample10"+data[12]+".png";
+                      ctxBeard.drawImage(imgBeard, 0, 0);
+                    }
 
   
 }
