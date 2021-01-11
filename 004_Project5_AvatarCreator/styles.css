@@ -1,3 +1,26 @@
+
+
+#avatar-form{
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+#avatar-form::-webkit-scrollbar{
+    
+    width: 10px;
+}
+
+#avatar-form::-webkit-scrollbar-track{
+    
+    background: #f1f1f1;
+}
+
+#avatar-form::-webkit-scrollbar-thumb {
+    background: #343A40;
+    
+  }
+
+
 @font-face {
     font-family: "Roboto";
     src: url("./fonts/Roboto-Bold.ttf");
@@ -89,9 +112,11 @@
     
 
 
-background: #8e9eab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #673AB7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
 
 
 }
@@ -117,7 +142,7 @@ background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, F
 
 .social-media{
     font-size: 2rem;
-    color: dodgerblue;
+    color: rgb(255, 255, 255);
    
 }
 
@@ -125,10 +150,11 @@ background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, F
 
 footer a{
     text-decoration: none;
+    color: rgb(228, 228, 228);
 }
 footer a:hover{
     text-decoration: none;
-    color: rgb(161, 161, 161);
+    color: rgb(255, 166, 0);
 }
 
 
@@ -1272,14 +1298,35 @@ input[type="radio"]:hover
 .eye3 input[type='radio']:after{
     background-image: url("./media/CharacterMan/eyeample3.jpg");
 }
+.eye3w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/eyeample3.jpg");
+}
 .eye4 input[type='radio']:after{
     background-image: url("./media/CharacterMan/eyeample4.jpg");
 }
 .eye5 input[type='radio']:after{
     background-image: url("./media/CharacterMan/eyeample5.jpg");
 }
+.eye5w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/eyeample5.jpg");
+}
 .eye6 input[type='radio']:after{
     background-image: url("./media/CharacterMan/eyeample6.jpg");
+}
+.eye6w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/eyeample6.jpg");
+}
+.eye7 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyeample7.jpg");
+}
+.eye8 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyeample8.jpg");
+}
+.eye9 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyeample9.jpg");
+}
+.eye10 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/eyeample10.jpg");
 }
 
 /* mouth styles */
@@ -1292,14 +1339,23 @@ input[type="radio"]:hover
 .mouth3 input[type='radio']:after{
     background-image: url("./media/CharacterMan/mouthsample3.gif");
 }
+.mouth3w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/mouthsample3.gif");
+}
 .mouth4 input[type='radio']:after{
     background-image: url("./media/CharacterMan/mouthsample4.gif");
+}
+.mouth4w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/mouthsample4.gif");
 }
 .mouth5 input[type='radio']:after{
     background-image: url("./media/CharacterMan/mouthsample5.gif");
 }
 .mouth6 input[type='radio']:after{
     background-image: url("./media/CharacterMan/mouthsample6.gif");
+}
+.mouth6w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/mouthsample6.gif");
 }
 .mouth7 input[type='radio']:after{
     background-image: url("./media/CharacterMan/mouthsample7.gif");
@@ -1309,6 +1365,10 @@ input[type="radio"]:hover
 }
 .mouth9 input[type='radio']:after{
     background-image: url("./media/CharacterMan/mouthsample9.gif");
+}
+
+.mouth10 input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/mouthsample10.gif");
 }
 
 
@@ -1375,6 +1435,65 @@ input[type="radio"]:hover
 .hairb11 input[type='radio']:after{
     background-image: url("./media/CharacterMan/hairsample11.gif");
 }
+.hairb12 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample12.gif");
+}
+.hairb13 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample13.gif");
+}
+.hairb14 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample14.gif");
+}
+.hairb15 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/hairsample15.gif");
+}
+
+
+
+.hairb2w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample2.gif");
+}
+.hairb3w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample3.gif");
+}
+.hairb4w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample4.gif");
+}
+.hairb5w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample5.gif");
+}
+.hairb6w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample6.gif");
+}
+.hairb7w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample7.gif");
+}
+.hairb8w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample8.gif");
+}
+.hairb9w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample9.gif");
+}
+.hairb10w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample10.gif");
+}
+.hairb11w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample11.gif");
+}
+.hairb12w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample12.gif");
+}
+
+.hairb13w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample13.gif");
+}
+.hairb14w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample14.gif");
+}
+.hairb15w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/hairsample15.gif");
+}
+
 
 
 
@@ -1677,6 +1796,22 @@ input[type="radio"]:hover
     background-image: url("./media/CharacterMan/shirtsample6.gif");
 }
 
+.wshirtb1 input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/shirtsample1.gif");
+}
+.wshirtb2 input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/shirtsample2.gif");
+}
+.wshirtb3 input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/shirtsample3.gif");
+}
+.wshirtb4 input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/shirtsample4.gif");
+}
+.wshirtb5 input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/shirtsample5.gif");
+}
+
 
 /*print styles*/
 .printb1 input[type='radio']:after{
@@ -1787,15 +1922,146 @@ input[type="radio"]:hover
 .printb36 input[type='radio']:after{
     background-image: url("./media/CharacterMan/printsample36.gif");
 }
-
-
-#g0{
-    background-color: #e65ae6;
+.printb37 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample37.gif");
 }
-#g1{
-    background-color: #3539fa;
+.printb38 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample38.gif");
+}
+.printb39 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample39.gif");
+}
+.printb40 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/printsample40.gif");
 }
 
+
+/*accessories styles*/
+
+.accb1w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/acsample1.gif");
+}
+.accb2w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/acsample2.gif");
+}
+.accb3w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/acsample3.gif");
+}
+.accb4w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/acsample4.gif");
+}
+.accb5w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/acsample5.gif");
+}
+.accb6w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/acsample6.gif");
+}
+.accb7w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/acsample7.gif");
+}
+.accb8w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/acsample8.gif");
+}
+.accb9w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/acsample9.gif");
+}
+.accb10w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/acsample10.gif");
+}
+
+/*Pants styles*/
+.pantb1 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/pantsample1.gif");
+}
+.pantb2 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/pantsample2.gif");
+}
+.pantb3 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/pantsample3.gif");
+}
+.pantb4 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/pantsample4.gif");
+}
+.pantb5 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/pantsample5.gif");
+}
+
+
+.pantb1w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/pantsample1.gif");
+}
+.pantb2w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/pantsample2.gif");
+}
+.pantb3w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/pantsample3.gif");
+}
+.pantb4w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/pantsample4.gif");
+}
+.pantb5w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/pantsample5.gif");
+}
+
+/**/
+.shoesb1 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/shoessample1.gif");
+}
+.shoesb2 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/shoessample2.gif");
+}
+.shoesb3 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/shoessample3.gif");
+}
+
+.shoesb3w input[type='radio']:after{
+    background-image: url("./media/CharacterWoman/shoessample3.gif");
+}
+
+
+
+/* gender styles */
+.genderb input[type='radio']:after {
+    color: white;
+    width: 56px;
+    height: 56px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+    
+}
+
+.genderb input[type='radio']:checked:after{
+    color: white;
+    width: 56px;
+    height: 56px;
+    top: 6px;
+    border-radius: 5px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(48, 71, 202);
+    
+}
+
+.genderb1 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/maleIcon.gif");
+}
+.genderb2 input[type='radio']:after{
+    background-image: url("./media/CharacterMan/femaleIcon.gif");
+}
+
+
+
+/* show and hiden forms*/
+.hide-element{
+    display: none;
+}
 
 
 

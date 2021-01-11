@@ -15,17 +15,17 @@
 
     <!-- PRIMARY TAGS SECTION -->
     <meta property="card" content="summary_large_image">
-    <meta property="url" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/002_Project3_Phrase_Generator/">
-    <meta name="title" content="Phrase Generator App®">
-    <meta name="description" content="Phrase generator App is a Simple tool to create phrases in images that you can personalize, download and share.">
-    <meta property="image" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/002_Project3_Phrase_Generator/media/Logomedia.fw.png">
+    <meta property="url" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/004_Project5_AvatarCreator/">
+    <meta name="title" content="Avatar Generator App®">
+    <meta name="description" content="Avatar generator App is a Simple tool to create custom avatars with at least 500 kinds of combinations using the power of Web API Canva, only create, download and share.">
+    <meta property="image" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/004_Project5_AvatarCreator/media/Logomedia.fw.png">
 
     <!-- PRIMARY TAGS TWITTER SECTION -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/002_Project3_Phrase_Generator/">
-    <meta property="twitter:title" content="Phrase Generator App®">
-    <meta property="twitter:description" content="Phrase generator App is a Simple tool to create phrases in images that you can personalize, download and share.">
-    <meta property="twitter:image" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/002_Project3_Phrase_Generator/media/Logomedia.fw.png">
+    <meta property="twitter:url" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/004_Project5_AvatarCreator/">
+    <meta property="twitter:title" content="Avatar Generator App®">
+    <meta property="twitter:description" content="Avatar generator App is a Simple tool to create custom avatars with at least 500 kinds of combinations using the power of Web API Canva, only create, download and share.">
+    <meta property="twitter:image" content="https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/004_Project5_AvatarCreator/media/Logomedia.fw.png">
     
     <!-- CSS SECTION -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -39,7 +39,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    <title>Phrase Generator App</title>
+    <title>Avatar Generator App</title>
 </head>
 <body id="body-app" class="body-light">
     <!-- HEADER SECTION -->
@@ -49,30 +49,50 @@
                 <div>
                 <a class="navbar-brand" href="index.html">
                     <img src="./media/favicon-32x32.png" alt="Logo" class="d-inline-block align-top">
-                    Phrase Generator App
+                    Avatar Generator App
                 </a>
                 </div>
                 <div class="theme">
                     <a href="#" title="Restart" onclick="window.location.reload();"> <i class="fas fa-undo mr-2 text-light"></i></a>
-                    <a href="#" title="Light" class="light_t"> <i class="fas fa-sun mr-2"></i> </a>
-                   <a href="#" title="Dark" class="dark_t"><i class="fas fa-moon"></i> </a>
+                <!--   <a href="#" title="Light" class="light_t"> <i class="fas fa-sun mr-2"></i> </a>
+                   <a href="#" title="Dark" class="dark_t"><i class="fas fa-moon"></i> </a>--> 
                 </div>
             </nav>
             
     </header>
 
     <!-- MAIN SECTION -->
-    <main class="mb-5">
-        <div class="container">
-            <div id="App" class="row pt-5 justify-content-center">
-                <div class="col-md-6">
+    <main class="mb-5 container">
+        <div class="container row">
+            <div id="App" class="col-md-6 pt-5 justify-content-center">
+                <div class="">
                     <div class="card border border-dark mb-3">
                         <div class="card-header bg-dark">
                             <h5 class="card-title text-light"> Generator Panel <i id="logoControl" class="fas fa-pencil-ruler text-light"></i></h5>
                             
                         </div>
+
+                        
                         
                           <form id="avatar-form" class="card-body">
+                            <!-- Gender avatar -->
+                            <div class="form-group row align-items-center">
+                              <div class="mr-2 ml-3"> <i class="fas fa-venus-mars text-dark"></i></div>
+                              <div class="form-group row align-items-center ml-1 text-center" id="gender_select">
+                                                            
+                                      <div class="form-check form-check-inline genderb genderb1 ml-3 mr-0">
+                                          <input class="form-check-input" type="radio" name="gender" id="gender1" value="male" checked>
+                                        </div>
+                                        <div class="form-check form-check-inline genderb genderb2 mx-0">
+                                          <input class="form-check-input" type="radio" name="gender" id="gender2" value="female">
+                                        </div>
+                                  </div>
+                           </div>
+                           
+                           <hr>
+
+                           <!-- --------------------------------------------MAN PANEL------------------------------------------------------------- -->
+                           <div id="male-form">
 
                             <!-- background color -->
                             <div class="form-group row align-items-center" id="bg_select">
@@ -155,18 +175,7 @@
                              </div>
 
                              <hr>
-                            <!-- Gender avatar -->
-                            <div class="form-group row align-items-center">
-                                <div class="mr-2 ml-3"> <i class="fas fa-venus-mars text-dark"></i></div>
-                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                                    <div class="btn-group col" role="group" aria-label="First group">
-                                    <button type="button" class="text-white btn color-0 fas fa-female p-3" id="g0"></button>
-                                    <button type="button" class="text-white btn color-1 fas fa-male p-3" id="g1"></button>
-                                    </div>                
-                                </div>
-                             </div>
-                             
-                             <hr>
+                            
                              <!-- Body Color avatar -->
                               <div class="form-group row align-items-center" id="body_select">
                                  <div class="mx-3 text-dark font-weight-bold"> <i class="fas fa-child"></i> </div>
@@ -192,10 +201,7 @@
                                         <input class="form-check-input" type="radio" name="bdg" id="bdg6" value="body_5">
                                       </div>                                            
                                     
-                                 </div>    
-
-
-                                                              
+                                 </div>                                                            
                               </div>
 
                               <hr>
@@ -203,9 +209,7 @@
                               <!-- Head config avatar -->
                               <div class="form-group row align-items-center">
                                 <div class="mr-2 ml-3"><i class="fas fa-theater-masks text-dark"></i></div>
-                                <div class="col ml-1">
-                                        
-                                    
+                                <div class="col ml-1">   
                                     <ul class="nav nav-pills mb-3" id="pills-tab-head" role="tablist">
                                         <li class="nav-item" role="presentation">
                                           <a class="nav-link active" id="pills-face-tab" data-toggle="pill" href="#pills-face" role="tab" aria-controls="pills-face" aria-selected="true">Face</a>
@@ -215,6 +219,9 @@
                                         </li>
                                         <li class="nav-item" role="presentation">
                                           <a class="nav-link" id="pills-beard-tab" data-toggle="pill" href="#pills-beard" role="tab" aria-controls="pills-beard" aria-selected="false">Beard & Mustache</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <a class="nav-link" id="pills-accessories-tab" data-toggle="pill" href="#pills-accessories" role="tab" aria-controls="pills-accessories" aria-selected="false">Accessories</a>
                                         </li>
                                       </ul>
                                       <div class="tab-content" id="pills-tabContent">
@@ -304,6 +311,18 @@
                                                         <div class="form-check form-check-inline eye eye6 mx-0">
                                                           <input class="form-check-input" type="radio" name="eye" id="eye6" value="eye_6">
                                                         </div>  
+                                                        <div class="form-check form-check-inline eye eye7 mx-0">
+                                                          <input class="form-check-input" type="radio" name="eye" id="eye7" value="eye_7">
+                                                        </div>  
+                                                        <div class="form-check form-check-inline eye eye8 mx-0">
+                                                          <input class="form-check-input" type="radio" name="eye" id="eye8" value="eye_8">
+                                                        </div>  
+                                                        <div class="form-check form-check-inline eye eye9 mx-0">
+                                                          <input class="form-check-input" type="radio" name="eye" id="eye9" value="eye_9">
+                                                        </div>  
+                                                        <div class="form-check form-check-inline eye eye10 mx-0">
+                                                          <input class="form-check-input" type="radio" name="eye" id="eye10" value="eye_10">
+                                                        </div>  
                                                       </div>                                             
                                                        <!-- Colors --> 
                                                        <div>
@@ -372,9 +391,15 @@
                                                   <div class="form-check form-check-inline eye mouth9 mx-0">
                                                     <input class="form-check-input" type="radio" name="mouth" id="mouth9" value="mouth_9">
                                                   </div>  
+                                                  <div class="form-check form-check-inline eye mouth10 mx-0">
+                                                    <input class="form-check-input" type="radio" name="mouth" id="mouth10" value="mouth_10">
+                                                  </div> 
                                                 </div> 
 
                                         </div>
+
+
+
                                         <div class="tab-pane fade text-center" id="pills-hair" role="tabpanel" aria-labelledby="pills-hair-tab">
 
                                                                          <!-- Samples --> 
@@ -411,7 +436,19 @@
                                                                             </div> 
                                                                             <div class="form-check form-check-inline hairb hairb11 mx-0">
                                                                               <input class="form-check-input" type="radio" name="hair" id="hair11" value="hair_11">
-                                                                            </div>    
+                                                                            </div> 
+                                                                            <div class="form-check form-check-inline hairb hairb12 mx-0">
+                                                                              <input class="form-check-input" type="radio" name="hair" id="hair12" value="hair_12">
+                                                                            </div>
+                                                                            <div class="form-check form-check-inline hairb hairb13 mx-0">
+                                                                              <input class="form-check-input" type="radio" name="hair" id="hair12" value="hair_13">
+                                                                            </div>   
+                                                                            <div class="form-check form-check-inline hairb hairb14 mx-0">
+                                                                              <input class="form-check-input" type="radio" name="hair" id="hair12" value="hair_14">
+                                                                            </div>   
+                                                                            <div class="form-check form-check-inline hairb hairb15 mx-0">
+                                                                              <input class="form-check-input" type="radio" name="hair" id="hair12" value="hair_15">
+                                                                            </div>      
                                                                           </div>                                             
                                                                            <!-- Colors --> 
                                                                            <div>
@@ -451,6 +488,9 @@
 
 
                                         </div>
+
+
+
                                         <div class="tab-pane fade text-center" id="pills-beard" role="tabpanel" aria-labelledby="pills-beard-tab">
                                           
                                           <!-- Samples --> 
@@ -485,6 +525,7 @@
                                               <div class="form-check form-check-inline hairb beardb10 mx-0">
                                                 <input class="form-check-input" type="radio" name="beard" id="beard10" value="beard_10">
                                               </div> 
+                                            
                                                  
                                             </div>                                             
                                              <!-- Colors --> 
@@ -524,6 +565,47 @@
                                             </p>  
 
                                         </div>
+
+
+
+                                        <div class="tab-pane fade text-center" id="pills-accessories" role="tabpanel" aria-labelledby="pills-accessories-tab">
+                                              
+                                          <!-- Samples --> 
+                                          <div>      
+                                            <div class="form-check form-check-inline hairb accb1w mx-0">
+                                                <input class="form-check-input" type="radio" name="acc" id="w1" value="acc_1" checked>
+                                              </div>
+                                              <div class="form-check form-check-inline hairb accb2w mx-0">
+                                                <input class="form-check-input" type="radio" name="acc" id="w2" value="acc_2">
+                                              </div>
+                                              <div class="form-check form-check-inline hairb accb3w mx-0">
+                                                <input class="form-check-input" type="radio" name="acc" id="w3" value="acc_3">
+                                              </div>
+                                              <div class="form-check form-check-inline hairb accb4w mx-0">
+                                                <input class="form-check-input" type="radio" name="acc" id="w4" value="acc_4">
+                                              </div>
+                                              <div class="form-check form-check-inline hairb accb5w mx-0">
+                                                <input class="form-check-input" type="radio" name="acc" id="w5" value="acc_5">
+                                              </div>
+                                              <div class="form-check form-check-inline hairb accb6w mx-0">
+                                                <input class="form-check-input" type="radio" name="acc" id="w6" value="acc_6">
+                                              </div>   
+                                              <div class="form-check form-check-inline hairb accb7w mx-0">
+                                                <input class="form-check-input" type="radio" name="acc" id="w7" value="acc_7">
+                                              </div> 
+                                              <div class="form-check form-check-inline hairb accb8w mx-0">
+                                                <input class="form-check-input" type="radio" name="acc" id="w8" value="acc_8">
+                                              </div> 
+                                              <div class="form-check form-check-inline hairb accb9w mx-0">
+                                                <input class="form-check-input" type="radio" name="acc" id="w9" value="acc_9">
+                                              </div>  
+                                              <div class="form-check form-check-inline hairb accb10w mx-0">
+                                                <input class="form-check-input" type="radio" name="acc" id="w10" value="acc_10">
+                                              </div>                                               
+                                            </div>                                             
+                                        </div>
+
+                                        
                                       </div>
 
                                       
@@ -639,6 +721,18 @@
                                               <div class="form-check form-check-inline hairb printb5 mx-0">
                                                 <input class="form-check-input" type="radio" name="print" id="print5" value="print_5">
                                               </div>
+                                              <div class="form-check form-check-inline hairb printb37 mx-0">
+                                                <input class="form-check-input" type="radio" name="print" id="print37" value="print_37">
+                                              </div>
+                                              <div class="form-check form-check-inline hairb printb38 mx-0">
+                                                <input class="form-check-input" type="radio" name="print" id="print38" value="print_38">
+                                              </div>
+                                              <div class="form-check form-check-inline hairb printb39 mx-0">
+                                                <input class="form-check-input" type="radio" name="print" id="print39" value="print_39">
+                                              </div>
+                                              <div class="form-check form-check-inline hairb printb40 mx-0">
+                                                <input class="form-check-input" type="radio" name="print" id="print40" value="print_40">
+                                              </div>
                                               <div class="form-check form-check-inline hairb printb6 mx-0">
                                                 <input class="form-check-input" type="radio" name="print" id="print6" value="print_6">
                                               </div>
@@ -736,28 +830,891 @@
                                             </div>   
 
                                         </div>
-                                        <div class="tab-pane fade" id="pills-pant" role="tabpanel" aria-labelledby="pills-pant-tab">pantalon</div>
-                                        <div class="tab-pane fade" id="pills-shoes" role="tabpanel" aria-labelledby="pills-shoes-tab">zapatos</div>
+                                        <div class="tab-pane text-center fade" id="pills-pant" role="tabpanel" aria-labelledby="pills-pant-tab">
+                                          
+                                            <!-- Samples --> 
+                                            <div>      
+                                              <div class="form-check form-check-inline hairb pantb1 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pant" id="pant1" value="pant_1" checked>
+                                                </div>
+                                                <div class="form-check form-check-inline hairb pantb2 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pant" id="pant2" value="pant_2">
+                                                </div>
+                                                <div class="form-check form-check-inline hairb pantb3 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pant" id="pant3" value="pant_3">
+                                                </div>
+                                                <div class="form-check form-check-inline hairb pantb4 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pant" id="pant4" value="pant_4">
+                                                </div>
+                                                <div class="form-check form-check-inline hairb pantb5 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pant" id="pant5" value="pant_5">
+                                                </div>
+                                                                                            
+                                                   
+                                              </div>                                             
+                                               <!-- Colors --> 
+                                               <div>
+                                                <p class="my-4">
+                                                <div class="form-check form-check-inline shirtg1 ml-3 mr-0">
+                                                  <input class="form-check-input" type="radio" name="pantg" id="pantg1" value="pantC_1" checked>
+                                                </div>
+                                                <div class="form-check form-check-inline shirtg2 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pantg" id="pantg2" value="pantC_2">
+                                                </div>
+                                                <div class="form-check form-check-inline shirtg3 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pantg" id="pantg3" value="pantC_3">
+                                                </div>
+                                                <div class="form-check form-check-inline shirtg4 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pantg" id="pantg4" value="pantC_4">
+                                                </div>
+                                                <div class="form-check form-check-inline shirtg5 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pantg" id="pantg5" value="pantC_5">
+                                                </div>
+                                                <div class="form-check form-check-inline shirtg6 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pantg" id="pantg6" value="pantC_6">
+                                                </div>
+                                                <div class="form-check form-check-inline shirtg7 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pantg" id="pantg7" value="pantC_7">
+                                                </div>
+                                                <div class="form-check form-check-inline shirtg8 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pantg" id="pantg8" value="pantC_8">
+                                                </div>
+                                                <div class="form-check form-check-inline shirtg9 mx-0">
+                                                  <input class="form-check-input" type="radio" name="pantg" id="pantg9" value="pantC_9">
+                                                </div>
+                                                        
+                                               </div>
+                                              </p>  
+
+                                        </div>
+                                        <div class="tab-pane text-center fade" id="pills-shoes" role="tabpanel" aria-labelledby="pills-shoes-tab">
+                                          
+                                           <!-- Samples --> 
+                                           <div>      
+                                            <div class="form-check form-check-inline hairb shoesb1 mx-0">
+                                                <input class="form-check-input" type="radio" name="shoes" id="shoes1" value="shoes_1" checked>
+                                              </div>
+                                              <div class="form-check form-check-inline hairb shoesb2 mx-0">
+                                                <input class="form-check-input" type="radio" name="shoes" id="shoes2" value="shoes_2">
+                                              </div>
+                                              <div class="form-check form-check-inline hairb shoesb3 mx-0">
+                                                <input class="form-check-input" type="radio" name="shoes" id="shoes3" value="shoes_3">
+                                              </div>
+                                                                                                                                   
+                                                 
+                                            </div>                                             
+                                             <!-- Colors --> 
+                                             <div>
+                                              <p class="my-4">
+                                              <div class="form-check form-check-inline shirtg1 ml-3 mr-0">
+                                                <input class="form-check-input" type="radio" name="shoesg" id="shoesg1" value="shoesC_1" checked>
+                                              </div>
+                                              <div class="form-check form-check-inline shirtg2 mx-0">
+                                                <input class="form-check-input" type="radio" name="shoesg" id="shoesg2" value="shoesC_2">
+                                              </div>
+                                              <div class="form-check form-check-inline shirtg3 mx-0">
+                                                <input class="form-check-input" type="radio" name="shoesg" id="shoesg3" value="shoesC_3">
+                                              </div>
+                                              
+                                              <div class="form-check form-check-inline shirtg6 mx-0">
+                                                <input class="form-check-input" type="radio" name="shoesg" id="shoesg6" value="shoesC_6">
+                                              </div>
+                                              <div class="form-check form-check-inline shirtg7 mx-0">
+                                                <input class="form-check-input" type="radio" name="shoesg" id="shoesg7" value="shoesC_7">
+                                              </div>
+                                            
+                                              <div class="form-check form-check-inline shirtg9 mx-0">
+                                                <input class="form-check-input" type="radio" name="shoesg" id="shoesg9" value="shoesC_9">
+                                              </div>
+                                                      
+                                             </div>
+                                            </p>  
+
+
+
+                                        </div>
                                       </div>
 
 
                                 </div>
                               </div>
                              
-                              
+                              </div>
+
+                              <!-- ---------------------------------------------------------WOMAN PANEL--------------------------------------------- -->
+                              <div id="female-form" class="hide-element">
+
+                                <!-- background color -->
+                                <div class="form-group row align-items-center" id="wbg_select">
+                                    <div class="mx-3 text-dark font-weight-bold"> <i class="fas fa-fill-drip"></i></div>         
+                                       
+                                    <div class="form-check form-check-inline bg1 ml-3 mr-0">
+                                        <input class="form-check-input" type="radio" name="wbg" id="wbg1" value="#ffffff" checked>
+                                      </div>
+                                      <div class="form-check form-check-inline bg2 mx-0">
+                                        <input class="form-check-input" type="radio" name="wbg" id="wbg2" value="#FEC803">
+                                      </div>
+                                      <div class="form-check form-check-inline bg3 mx-0">
+                                        <input class="form-check-input" type="radio" name="wbg" id="wbg3" value="#CD4803">
+                                      </div>
+                                      <div class="form-check form-check-inline bg4 mx-0">
+                                        <input class="form-check-input" type="radio" name="wbg" id="wbg4" value="#741188">
+                                      </div>
+                                      <div class="form-check form-check-inline bg5 mx-0">
+                                        <input class="form-check-input" type="radio" name="wbg" id="wbg5" value="#BBB1D6">
+                                      </div>
+                                      <div class="form-check form-check-inline bg6 mx-0">
+                                        <input class="form-check-input" type="radio" name="wbg" id="wbg6" value="#3780C5">
+                                      </div>
+                                      <div class="form-check form-check-inline bg7 mx-0">
+                                        <input class="form-check-input" type="radio" name="wbg" id="wbg7" value="#003980">
+                                      </div>
+                                      <div class="form-check form-check-inline bg8 mx-0">
+                                        <input class="form-check-input" type="radio" name="wbg" id="wbg8" value="#4DB592">
+                                      </div>
+                                      <div class="form-check form-check-inline bg9 mx-0">
+                                        <input class="form-check-input" type="radio" name="wbg" id="wbg9" value="#02822D">
+                                      </div>
+                                      <div class="form-check form-check-inline bg10 mx-0">
+                                        <input class="form-check-input" type="radio" name="wbg" id="wbg10" value="#333333">
+                                      </div>
+                                 </div>
+    
+    
+                                 <hr>
+                                
+                                <!-- Name avatar -->
+                                <div class="form-group row align-items-center">
+                                    <div class="mx-3"> <i class="fas fa-user-alt text-dark"></i></div>
+                                    <div class="col"> <input type="text" id="wname_t" placeholder="Avatar Name" class="form-control"></div>
+                                </div>
+                                <!-- Fore color -->
+                                <div class="form-group row align-items-center" id="wfg_select">
+                                    <div class="mx-4"></div>                             
+                                    <div class="form-check form-check-inline fg1 ml-3 mr-0">
+                                        <input class="form-check-input" type="radio" name="wfg" id="wfg1" value="#ffffff" checked>
+                                      </div>
+                                      <div class="form-check form-check-inline fg2 mx-0">
+                                        <input class="form-check-input" type="radio" name="wfg" id="wfg2" value="#FEC803">
+                                      </div>
+                                      <div class="form-check form-check-inline fg3 mx-0">
+                                        <input class="form-check-input" type="radio" name="wfg" id="wfg3" value="#CD4803">
+                                      </div>
+                                      <div class="form-check form-check-inline fg4 mx-0">
+                                        <input class="form-check-input" type="radio" name="wfg" id="wfg4" value="#741188">
+                                      </div>
+                                      <div class="form-check form-check-inline fg5 mx-0">
+                                        <input class="form-check-input" type="radio" name="wfg" id="wfg5" value="#BBB1D6">
+                                      </div>
+                                      <div class="form-check form-check-inline fg6 mx-0">
+                                        <input class="form-check-input" type="radio" name="wfg" id="wfg6" value="#3780C5">
+                                      </div>
+                                      <div class="form-check form-check-inline fg7 mx-0">
+                                        <input class="form-check-input" type="radio" name="wfg" id="wfg7" value="#003980">
+                                      </div>
+                                      <div class="form-check form-check-inline fg8 mx-0">
+                                        <input class="form-check-input" type="radio" name="wfg" id="wfg8" value="#4DB592">
+                                      </div>
+                                      <div class="form-check form-check-inline fg9 mx-0">
+                                        <input class="form-check-input" type="radio" name="wfg" id="wfg9" value="#02822D">
+                                      </div>
+                                      <div class="form-check form-check-inline fg10 mx-0">
+                                        <input class="form-check-input" type="radio" name="wfg" id="wfg10" value="#333333">
+                                      </div>                                               
+                                    
+                                 </div>
+    
+                                 <hr>
+                                
+                                 <!-- Body Color avatar -->
+                                  <div class="form-group row align-items-center" id="wbody_select">
+                                     <div class="mx-3 text-dark font-weight-bold"> <i class="fas fa-child"></i> </div>
+                                                            
+                                     <div class="form-group row align-items-center ml-1" id="wbodyColor_select">
+                                                                  
+                                        <div class="form-check form-check-inline bdg1 ml-3 mr-0">
+                                            <input class="form-check-input" type="radio" name="wbdg" id="wbdg1" value="body_0" checked>
+                                          </div>
+                                          <div class="form-check form-check-inline bdg2 mx-0">
+                                            <input class="form-check-input" type="radio" name="wbdg" id="wbdg2" value="body_1">
+                                          </div>
+                                          <div class="form-check form-check-inline bdg3 mx-0">
+                                            <input class="form-check-input" type="radio" name="wbdg" id="bdg3" value="body_2">
+                                          </div>
+                                          <div class="form-check form-check-inline bdg4 mx-0">
+                                            <input class="form-check-input" type="radio" name="wbdg" id="wbdg4" value="body_3">
+                                          </div>
+                                          <div class="form-check form-check-inline bdg5 mx-0">
+                                            <input class="form-check-input" type="radio" name="wbdg" id="wbdg5" value="body_4">
+                                          </div>
+                                          <div class="form-check form-check-inline bdg6 mx-0">
+                                            <input class="form-check-input" type="radio" name="wbdg" id="wbdg6" value="body_5">
+                                          </div>                                            
+                                        
+                                     </div>                                                            
+                                  </div>
+    
+                                  <hr>
+                                
+                                  <!-- Head config avatar -->
+                                  <div class="form-group row align-items-center">
+                                    <div class="mr-2 ml-3"><i class="fas fa-theater-masks text-dark"></i></div>
+                                    <div class="col ml-1">   
+                                        <ul class="nav nav-pills mb-3" id="wpills-tab-head" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link active" id="wpills-face-tab" data-toggle="pill" href="#wpills-face" role="tab" aria-controls="wpills-face" aria-selected="true">Face</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="wpills-hair-tab" data-toggle="pill" href="#wpills-hair" role="tab" aria-controls="wpills-hair" aria-selected="false">Hair</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="wpills-beard-tab" data-toggle="pill" href="#wpills-beard" role="tab" aria-controls="wpills-beard" aria-selected="false">Accessories</a>
+                                            </li>
+                                          </ul>
+                                          <div class="tab-content" id="wpills-tabContent">
+                                            <div class="tab-pane fade show active text-center" id="wpills-face" role="tabpanel" aria-labelledby="wpills-face-tab">
+                                              
+                                                <h6 class="bg-secondary py-1 pl-2 text-light">Eyebrows</h6>
+                                                
+                                                
+                                                        <!-- Samples --> 
+                                                        <div>      
+                                                        <div class="form-check form-check-inline eyeb eyeb1 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyeb" id="weyeb1" value="eyebrows_1" checked>
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyeb eyeb2 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyeb" id="weyeb2" value="eyebrows_2">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyeb eyeb3 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyeb" id="weyeb3" value="eyebrows_3">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyeb eyeb4 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyeb" id="weyeb4" value="eyebrows_4">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyeb eyeb5 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyeb" id="weyeb5" value="eyebrows_5">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyeb eyeb6 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyeb" id="weyeb6" value="eyebrows_6">
+                                                          </div>  
+                                                        </div>                                             
+                                                         <!-- Colors --> 
+                                                         <div>
+                                                          <p class="my-4">
+                                                          <div class="form-check form-check-inline eyebg1 ml-3 mr-0">
+                                                            <input class="form-check-input" type="radio" name="weyebg" id="weyebg1" value="eyebrowsC_1" checked>
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyebg2 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyebg" id="weyebg2" value="eyebrowsC_2">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyebg3 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyebg" id="weyebg3" value="eyebrowsC_3">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyebg4 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyebg" id="weyebg4" value="eyebrowsC_4">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyebg5 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyebg" id="weyebg5" value="eyebrowsC_5">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyebg6 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyebg" id="weyebg6" value="eyebrowsC_6">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyebg7 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyebg" id="weyebg7" value="eyebrowsC_7">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyebg8 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyebg" id="weyebg8" value="eyebrowsC_8">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyebg9 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyebg" id="weyebg9" value="eyebrowsC_9">
+                                                          </div>
+                                                          <div class="form-check form-check-inline eyebg10 mx-0">
+                                                            <input class="form-check-input" type="radio" name="weyebg" id="weyebg10" value="eyebrowsC_10">
+                                                          </div>        
+                                                         </div>
+                                                        </p>
+    
+    
+    
+                                                <hr>
+                                                <h6 class="bg-secondary py-1 pl-2 text-light">Eyes</h6>
+                                                        <!-- Samples --> 
+                                                        <div>      
+                                                          <div class="form-check form-check-inline eye eye1 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weye" id="weye1" value="eye_1" checked>
+                                                            </div>
+                                                            <div class="form-check form-check-inline eye eye2 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weye" id="weye2" value="eye_2">
+                                                            </div>
+                                                            <div class="form-check form-check-inline eye eye3w mx-0">
+                                                              <input class="form-check-input" type="radio" name="weye" id="weye3" value="eye_3">
+                                                            </div>
+                                                            <div class="form-check form-check-inline eye eye4 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weye" id="weye4" value="eye_4">
+                                                            </div>
+                                                            <div class="form-check form-check-inline eye eye5w mx-0">
+                                                              <input class="form-check-input" type="radio" name="weye" id="weye5" value="eye_5">
+                                                            </div>
+                                                            <div class="form-check form-check-inline eye eye6w mx-0">
+                                                              <input class="form-check-input" type="radio" name="weye" id="weye6" value="eye_6">
+                                                            </div>  
+                                                            <div class="form-check form-check-inline eye eye7 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weye" id="weye7" value="eye_7">
+                                                            </div> 
+                                                            <div class="form-check form-check-inline eye eye8 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weye" id="weye8" value="eye_8">
+                                                            </div> 
+                                                            <div class="form-check form-check-inline eye eye9 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weye" id="weye9" value="eye_9">
+                                                            </div> 
+                                                            <div class="form-check form-check-inline eye eye10 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weye" id="weye10" value="eye_10">
+                                                            </div> 
+                                                          </div>                                             
+                                                           <!-- Colors --> 
+                                                           <div>
+                                                            <p class="my-4">
+                                                            <div class="form-check form-check-inline eyebg1 ml-3 mr-0">
+                                                              <input class="form-check-input" type="radio" name="weyeg" id="weyeg1" value="eyeC_1" checked>
+                                                            </div>
+                                                            <div class="form-check form-check-inline eyebg2 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weyeg" id="weyeg2" value="eyeC_2">
+                                                            </div>
+                                                          <!--  <div class="form-check form-check-inline eyebg3 mx-0">
+                                                              <input class="form-check-input" type="radio" name="eyeg" id="eyeg3" value="eyeC_3">
+                                                            </div> -->
+                                                            <div class="form-check form-check-inline eyebg4 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weyeg" id="weyeg4" value="eyeC_4">
+                                                            </div>
+                                                            <!-- <div class="form-check form-check-inline eyebg5 mx-0">
+                                                              <input class="form-check-input" type="radio" name="eyeg" id="eyeg5" value="eyeC_5">
+                                                            </div>
+                                                            <div class="form-check form-check-inline eyebg6 mx-0">
+                                                              <input class="form-check-input" type="radio" name="eyeg" id="eyeg6" value="eyeC_6">
+                                                            </div> -->
+    
+                                                            <div class="form-check form-check-inline eyebg7 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weyeg" id="weyeg7" value="eyeC_7">
+                                                            </div>
+                                                            <div class="form-check form-check-inline eyebg8 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weyeg" id="weyeg8" value="eyeC_8">
+                                                            </div>
+                                                            <div class="form-check form-check-inline eyebg9 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weyeg" id="weyebg9" value="eyeC_9">
+                                                            </div>
+                                                            <div class="form-check form-check-inline eyebg10 mx-0">
+                                                              <input class="form-check-input" type="radio" name="weyeg" id="weyebg10" value="eyeC_10">
+                                                            </div>        
+                                                           </div>
+                                                          </p>
+                                                <hr>
+                                                <h6 class="bg-secondary py-1 pl-2 text-light">Mouth</h6>
+                                                   <!-- Samples --> 
+                                                   <div>      
+                                                    <div class="form-check form-check-inline eye mouth1 mx-0">
+                                                        <input class="form-check-input" type="radio" name="wmouth" id="wmouth1" value="mouth_1" checked>
+                                                      </div>
+                                                      <div class="form-check form-check-inline eye mouth2 mx-0">
+                                                        <input class="form-check-input" type="radio" name="wmouth" id="wmouth2" value="mouth_2">
+                                                      </div>
+                                                      <div class="form-check form-check-inline eye mouth3w mx-0">
+                                                        <input class="form-check-input" type="radio" name="wmouth" id="wmouth3" value="mouth_3">
+                                                      </div>
+                                                      <div class="form-check form-check-inline eye mouth4w mx-0">
+                                                        <input class="form-check-input" type="radio" name="wmouth" id="wmouth4" value="mouth_4">
+                                                      </div>
+                                                      <div class="form-check form-check-inline eye mouth5 mx-0">
+                                                        <input class="form-check-input" type="radio" name="wmouth" id="wmouth5" value="mouth_5">
+                                                      </div>
+                                                      <div class="form-check form-check-inline eye mouth6w mx-0">
+                                                        <input class="form-check-input" type="radio" name="wmouth" id="wmouth6" value="mouth_6">
+                                                      </div>
+                                                      <div class="form-check form-check-inline eye mouth7 mx-0">
+                                                        <input class="form-check-input" type="radio" name="wmouth" id="wmouth7" value="mouth_7">
+                                                      </div>
+                                                      <div class="form-check form-check-inline eye mouth8 mx-0">
+                                                        <input class="form-check-input" type="radio" name="wmouth" id="wmouth8" value="mouth_8">
+                                                      </div> 
+                                                      <div class="form-check form-check-inline eye mouth9 mx-0">
+                                                        <input class="form-check-input" type="radio" name="wmouth" id="wmouth9" value="mouth_9">
+                                                      </div>  
+                                                      <div class="form-check form-check-inline eye mouth10 mx-0">
+                                                        <input class="form-check-input" type="radio" name="wmouth" id="wmouth10" value="mouth_10">
+                                                      </div>  
+                                                    </div> 
+    
+                                            </div>
+                                            <div class="tab-pane fade text-center" id="wpills-hair" role="tabpanel" aria-labelledby="wpills-hair-tab">
+    
+                                                                             <!-- Samples --> 
+                                                                             <div>      
+                                                                              <div class="form-check form-check-inline hairb hairb1 mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair1" value="hair_1" checked>
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline hairb hairb2w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair2" value="hair_2">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline hairb hairb3w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair3" value="hair_3">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline hairb hairb4w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair4" value="hair_4">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline hairb hairb5w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair5" value="hair_5">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline hairb hairb6w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair6" value="hair_6">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline hairb hairb7w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair7" value="hair_7">
+                                                                                </div> 
+                                                                                <div class="form-check form-check-inline hairb hairb8w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair8" value="hair_8">
+                                                                                </div> 
+                                                                                <div class="form-check form-check-inline hairb hairb9w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair9" value="hair_9">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline hairb hairb10w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair10" value="hair_10">
+                                                                                </div> 
+                                                                                <div class="form-check form-check-inline hairb hairb11w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair11" value="hair_11">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline hairb hairb12w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair12" value="hair_12">
+                                                                                </div> 
+                                                                                <div class="form-check form-check-inline hairb hairb13w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair13" value="hair_13">
+                                                                                </div> 
+                                                                                <div class="form-check form-check-inline hairb hairb14w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair14" value="hair_14">
+                                                                                </div> 
+                                                                                <div class="form-check form-check-inline hairb hairb15w mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whair" id="whair15" value="hair_15">
+                                                                                </div> 
+                                                                                   
+                                                                              </div>                                             
+                                                                               <!-- Colors --> 
+                                                                               <div>
+                                                                                <p class="my-4">
+                                                                                <div class="form-check form-check-inline eyebg1 ml-3 mr-0">
+                                                                                  <input class="form-check-input" type="radio" name="whairg" id="whairg1" value="hairC_1" checked>
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline eyebg2 mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whairg" id="whairg2" value="hairC_2">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline eyebg3 mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whairg" id="whairg3" value="hairC_3">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline eyebg4 mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whairg" id="whairg4" value="hairC_4">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline eyebg5 mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whairg" id="whairg5" value="hairC_5">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline eyebg6 mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whairg" id="whairg6" value="hairC_6">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline eyebg7 mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whairg" id="whairg7" value="hairC_7">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline eyebg8 mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whairg" id="whairg8" value="hairC_8">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline eyebg9 mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whairg" id="whairg9" value="hairC_9">
+                                                                                </div>
+                                                                                <div class="form-check form-check-inline eyebg10 mx-0">
+                                                                                  <input class="form-check-input" type="radio" name="whairg" id="whairg10" value="hairC_10">
+                                                                                </div>        
+                                                                               </div>
+                                                                              </p>
+    
+    
+                                            </div>
+                                            <div class="tab-pane fade text-center" id="wpills-beard" role="tabpanel" aria-labelledby="wpills-beard-tab">
+                                              
+                                              <!-- Samples --> 
+                                              <div>      
+                                                <div class="form-check form-check-inline hairb accb1w mx-0">
+                                                    <input class="form-check-input" type="radio" name="accw" id="wbeard1" value="acc_1" checked>
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb accb2w mx-0">
+                                                    <input class="form-check-input" type="radio" name="accw" id="wbeard2" value="acc_2">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb accb3w mx-0">
+                                                    <input class="form-check-input" type="radio" name="accw" id="wbeard3" value="acc_3">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb accb4w mx-0">
+                                                    <input class="form-check-input" type="radio" name="accw" id="wbeard4" value="acc_4">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb accb5w mx-0">
+                                                    <input class="form-check-input" type="radio" name="accw" id="wbeard5" value="acc_5">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb accb6w mx-0">
+                                                    <input class="form-check-input" type="radio" name="accw" id="wbeard6" value="acc_6">
+                                                  </div>  
+                                                  <div class="form-check form-check-inline hairb accb7w mx-0">
+                                                    <input class="form-check-input" type="radio" name="accw" id="wbeard7" value="acc_7">
+                                                  </div> 
+                                                  <div class="form-check form-check-inline hairb accb8w mx-0">
+                                                    <input class="form-check-input" type="radio" name="accw" id="wbeard8" value="acc_8">
+                                                  </div> 
+                                                  <div class="form-check form-check-inline hairb accb9w mx-0">
+                                                    <input class="form-check-input" type="radio" name="accw" id="wbeard9" value="acc_9">
+                                                  </div> 
+                                                  <div class="form-check form-check-inline hairb accb10w mx-0">
+                                                    <input class="form-check-input" type="radio" name="accw" id="wbeard10" value="acc_10">
+                                                  </div>                                                 
+                                                </div>                                             
+                                            </div>
+                                          </div>
+    
+                                          
+    
+    
+                                    </div>
+                                  </div>
+    
+                                  <hr>
+    
+                                  <!-- clothes config avatar -->
+                                  <div class="form-group row align-items-center">
+                                    <div class="mr-2 ml-3"><i class="fas fa-tshirt text-dark"></i></div>
+                                    <div class="col ml-1">
+    
+                                        <ul class="nav nav-pills mb-3" id="wpills-tab-shirt" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link active" id="wpills-shirt-tab" data-toggle="pill" href="#wpills-shirt" role="tab" aria-controls="wpills-shirt" aria-selected="true">Shirt</a>
+                                            </li>
+                                               <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="wpills-pant-tab" data-toggle="pill" href="#wpills-pant" role="tab" aria-controls="wpills-pant" aria-selected="false">Pant</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" id="wpills-pant-shoes" data-toggle="pill" href="#wpills-shoes" role="tab" aria-controls="wpills-shoes" aria-selected="false">Shoes</a>
+                                              </li>
+                                          </ul>
+                                          <div class="tab-content" id="wpills-tabContent">
+                                            <div class="tab-pane text-center fade show active" id="wpills-shirt" role="tabpanel" aria-labelledby="wpills-shirt-tab">
+                                              
+                                                <h6 class="bg-secondary py-1 pl-2 text-light">Shirt Types</h6>
+                                                
+                                                
+    
+    
+                                              <!-- Samples --> 
+                                              <div>      
+                                                <div class="form-check form-check-inline hairb wshirtb1 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirt" id="wshirt1" value="shirt_1" checked>
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb wshirtb2 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirt" id="wshirt2" value="shirt_2">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb wshirtb3 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirt" id="wshirt3" value="shirt_3">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb wshirtb4 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirt" id="wshirt4" value="shirt_4">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb wshirtb5 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirt" id="wshirt5" value="shirt_5">
+                                                  </div>
+                                                  
+                                                  
+                                                     
+                                                </div>                                             
+                                                 <!-- Colors --> 
+                                                 <div>
+                                                  <p class="my-4">
+                                                  <div class="form-check form-check-inline shirtg1 ml-3 mr-0">
+                                                    <input class="form-check-input" type="radio" name="wshirtg" id="wshirtg1" value="shirtC_1" checked>
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg2 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirtg" id="wshirtg2" value="shirtC_2">
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg3 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirtg" id="wshirtg3" value="shirtC_3">
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg4 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirtg" id="wshirtg4" value="shirtC_4">
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg5 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirtg" id="wshirtg5" value="shirtC_5">
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg6 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirtg" id="wshirtg6" value="shirtC_6">
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg7 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirtg" id="wshirtg7" value="shirtC_7">
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg8 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirtg" id="wshirtg8" value="shirtC_8">
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg9 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshirtg" id="wshirtg9" value="shirtC_9">
+                                                  </div>
+                                                          
+                                                 </div>
+                                                </p>  
+    
+    
+    
+    
+    
+                                                <hr>
+                                                <h6 class="bg-secondary py-1 pl-2 text-light">Print</h6>
+                                                
+                                                <!-- Samples --> 
+                                              <div>      
+                                                <div class="form-check form-check-inline hairb printb1 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint1" value="print_1" checked>
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb2 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint2" value="print_2">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb3 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint3" value="print_3">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb4 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint4" value="print_4">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb5 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint5" value="print_5">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb37 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint37" value="print_37">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb38 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint38" value="print_38">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb39 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint39" value="print_39">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb40 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint40" value="print_40">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb6 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint6" value="print_6">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb7 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint7" value="print_7">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb8 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint8" value="print_8">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb9 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint9" value="print_9">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb10 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint10" value="print_10">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb11 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint11" value="print_11">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb12 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint12" value="print_12">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb13 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint13" value="print_13">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb14 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint14" value="print_14">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb15 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint15" value="print_15">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb16 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint16" value="print_16">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb17 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint17" value="print_17">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb18 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint18" value="print_18">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb19 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint19" value="print_19">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb20 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint20" value="print_20">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb21 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint21" value="print_21">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb22 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint22" value="print_22">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb23 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint23" value="print_23">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb24 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint24" value="print_24">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb25 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint25" value="print_25">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb26 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint26" value="print_26">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb27 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint27" value="print_27">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb28 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint28" value="print_28">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb29 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint29" value="print_29">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb30 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint30" value="print_30">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb31 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint31" value="print_31">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb32 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint32" value="print_32">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb33 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint33" value="print_33">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb34 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint34" value="print_34">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb35 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint35" value="print_35">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb printb36 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wprint" id="wprint36" value="print_36">
+                                                  </div>
+                                                     
+                                                </div>   
+    
+                                            </div>
+                                            <div class="tab-pane text-center fade" id="wpills-pant" role="tabpanel" aria-labelledby="wpills-pant-tab">
+                                              
+                                                <!-- Samples --> 
+                                                <div>      
+                                                  <div class="form-check form-check-inline hairb pantb1w mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpant" id="wpant1" value="pant_1" checked>
+                                                    </div>
+                                                    <div class="form-check form-check-inline hairb pantb2w mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpant" id="wpant2" value="pant_2">
+                                                    </div>
+                                                    <div class="form-check form-check-inline hairb pantb3w mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpant" id="wpant3" value="pant_3">
+                                                    </div>
+                                                    <div class="form-check form-check-inline hairb pantb4w mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpant" id="wpant4" value="pant_4">
+                                                    </div>
+                                                 
+                                                                                                
+                                                       
+                                                  </div>                                             
+                                                   <!-- Colors --> 
+                                                   <div>
+                                                    <p class="my-4">
+                                                    <div class="form-check form-check-inline shirtg1 ml-3 mr-0">
+                                                      <input class="form-check-input" type="radio" name="wpantg" id="wpantg1" value="pantC_1" checked>
+                                                    </div>
+                                                    <div class="form-check form-check-inline shirtg2 mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpantg" id="wpantg2" value="pantC_2">
+                                                    </div>
+                                                    <div class="form-check form-check-inline shirtg3 mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpantg" id="wpantg3" value="pantC_3">
+                                                    </div>
+                                                    <div class="form-check form-check-inline shirtg4 mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpantg" id="wpantg4" value="pantC_4">
+                                                    </div>
+                                                    <div class="form-check form-check-inline shirtg5 mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpantg" id="wpantg5" value="pantC_5">
+                                                    </div>
+                                                    <div class="form-check form-check-inline shirtg6 mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpantg" id="wpantg6" value="pantC_6">
+                                                    </div>
+                                                    <div class="form-check form-check-inline shirtg7 mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpantg" id="wpantg7" value="pantC_7">
+                                                    </div>
+                                                    <div class="form-check form-check-inline shirtg8 mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpantg" id="wpantg8" value="pantC_8">
+                                                    </div>
+                                                    <div class="form-check form-check-inline shirtg9 mx-0">
+                                                      <input class="form-check-input" type="radio" name="wpantg" id="wpantg9" value="pantC_9">
+                                                    </div>
+                                                            
+                                                   </div>
+                                                  </p>  
+    
+                                            </div>
+                                            <div class="tab-pane text-center fade" id="wpills-shoes" role="tabpanel" aria-labelledby="wpills-shoes-tab">
+                                              
+                                               <!-- Samples --> 
+                                               <div>      
+                                                <div class="form-check form-check-inline hairb shoesb1 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshoes" id="wshoes1" value="shoes_1" checked>
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb shoesb2 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshoes" id="wshoes2" value="shoes_2">
+                                                  </div>
+                                                  <div class="form-check form-check-inline hairb shoesb3w mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshoes" id="wshoes3" value="shoes_3">
+                                                  </div>
+                                                                                                                                       
+                                                     
+                                                </div>                                             
+                                                 <!-- Colors --> 
+                                                 <div>
+                                                  <p class="my-4">
+                                                  <div class="form-check form-check-inline shirtg1 ml-3 mr-0">
+                                                    <input class="form-check-input" type="radio" name="wshoesg" id="wshoesg1" value="shoesC_1" checked>
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg2 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshoesg" id="wshoesg2" value="shoesC_2">
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg3 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshoesg" id="wshoesg3" value="shoesC_3">
+                                                  </div>
+                                                  
+                                                  <div class="form-check form-check-inline shirtg6 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshoesg" id="wshoesg6" value="shoesC_6">
+                                                  </div>
+                                                  <div class="form-check form-check-inline shirtg7 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshoesg" id="wshoesg7" value="shoesC_7">
+                                                  </div>
+                                                
+                                                  <div class="form-check form-check-inline shirtg9 mx-0">
+                                                    <input class="form-check-input" type="radio" name="wshoesg" id="wshoesg9" value="shoesC_9">
+                                                  </div>
+                                                          
+                                                 </div>
+                                                </p>  
+    
+    
+    
+                                            </div>
+                                          </div>
+    
+    
+                                    </div>
+                                  </div>
+                                 
+                                  </div>
                                
                               <input type="submit" value="Generate" class="btn bg-dark text-light btn-block font-weight-bold"> 
+
+                              
                           </form>
-                        
+                        </div>
                       </div>
                       
                 </div>
-                <div class="col align-items-center w-100">
+                <div class="col-md-6 pt-5 align-items-center w-100">
                     <div class="card border border-dark mb-3" id="preview">
-                        <div class="card-body col">
+                        <div class="card-body">
                             <div>
                                 <canvas id="character" class="img-fluid col" width="340" height="520">
                                 </canvas>
+                                
                             </div>
                             
                         </div>
@@ -783,7 +1740,7 @@
             <a href="index.html">
                 <img src="./media/favicon-32x32.png" width="32px" height="32px" alt="Logo">
             </a>
-            Phrase Generator App® 2020
+            Avatar Generator App® 2021
             </div>
             <div class="social-media">
                 <a href="https://github.com/agzsoftsi" title="Follow on Github" target="_blank"> <i class="fab fa-github-square"></i> </a>

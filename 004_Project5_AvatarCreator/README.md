@@ -2,23 +2,41 @@
 
 ## Description
 
-Phrase generator App is a Simple tool to create phrases in images that you can personalize, download and share.
+Avatar generator App is a Simple tool to create custom avatars with at least 500 kinds of combinations using the power of Web API Canva, only create, download and share.
+
+
+## Features: 
+
+- Genders (2)
+- Backgrounds (10)
+- Avatar Name
+- Foreground (10)
+- Skin Colors(6)
+- Eyesbrows (6) - Color (10)
+- Eyes(13) - Color(10)
+- Mouth(13)
+- Hair(28) - Color(10)
+- Beard(10)- Color(10)
+- Accessories (10)
+- Shirts(11) - Color(9)
+- Prints (40)
+- Pants(10) - Color(9)
+- Shoes(6) - Color(6)
 
 ## :books: Content
 
 ## Version: 1.0
 
 - Working on web and android like an App
-- support 10 types of fonts
-- Preview generated Phrase
+- Generate Panel
+- Preview generated Avatar
 - download function working
 - Restart App function
-- Change a basic theme (light: by Default, dark)
 - Support for Google Chrome, Firefox, Android
 
 ## Access Link
 
-[Run App](https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/002_Project3_Phrase_Generator/index.html)
+[Run App](https://agzsoftsi.github.io/100_JavaScript_projects_Challenge/004_Project5_AvatarCreator/index.html)
 
 ## Download APK
 
@@ -36,4 +54,4 @@ Phrase generator App is a Simple tool to create phrases in images that you can p
 
 ## Video DEMO
 
-[DEMO](https://youtu.be/vMhUC1angr0)
+[DEMO](https://youtu.be/Q5rQxzfFVm0)
