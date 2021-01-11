@@ -40,7 +40,7 @@ Avatar generator App is a Simple tool to create custom avatars with at least 500
 
 ## Download APK
 
-[download](https://drive.google.com/file/d/1oGjZ3-wjAtifu6MBrRueWwPZlXJh0zLd/view?usp=sharing)
+[download](https://drive.google.com/file/d/1gPh0EwYxtAK5e6i7-vL9Lb7NEWq6LTK5/view?usp=sharing)
 
 ## Technologies:
 
