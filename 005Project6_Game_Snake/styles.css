@@ -1,0 +1,455 @@
+.body-light{
+    background: #673AB7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+.body-dark{
+background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+
+
+/* Action buttons Styles */
+
+#play-button, #restart-button, #score-button{
+    font-size: 36px;
+}
+
+
+
+
+/* Footer Buttons styles */
+.social-media{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+   
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+}
+footer a:hover{
+    text-decoration: none;
+    color: rgb(255, 166, 0);
+}
+
+#logoControl{
+    font-size: larger;    
+    float: right;
+}
+
+.btn-restart{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #e9e9e9;
+  background: linear-gradient(to right, #202020, #333333);
+  font-size: 20px;
+  font-weight: bolder;
+  color: azure;
+  }
+  .btn-restart:hover{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #43baff;
+    background: linear-gradient(to right, #424242, #333333);
+    font-size: 22px;
+    font-weight: bolder;
+    color: #43baff;
+    }
+    .btn-restart:active{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid #43baff;
+      background: linear-gradient(to right, #202020, #333333);
+      font-size: 20px;
+      font-weight: bolder;
+      color: #43baff;
+      }
+
+
+      .btn-score{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #e9e9e9;
+        background: linear-gradient(to right, #202020, #333333);
+        font-size: 18px;
+        font-weight: bolder;
+        color: azure;
+        }
+        .btn-score:hover{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 2px solid #ffd138;
+          background: linear-gradient(to right, #424242, #333333);
+          font-size: 20px;
+          font-weight: bolder;
+          color: #ffd138;
+          }
+          .btn-score:active{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #ffd138;
+            background: linear-gradient(to right, #202020, #333333);
+            font-size: 18px;
+            font-weight: bolder;
+            color: azure;
+            }
+
+            .btn-skin{
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              border: 2px solid #e9e9e9;
+              background: linear-gradient(to right, #202020, #333333);
+              font-size: 18px;
+              font-weight: bolder;
+              color: azure;
+              }
+              .btn-skin:hover{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 2px solid #ffd138;
+                background: linear-gradient(to right, #424242, #333333);
+                font-size: 20px;
+                font-weight: bolder;
+                color: #ffd138;
+                }
+                .btn-skin:active{
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  border: 2px solid #ffd138;
+                  background: linear-gradient(to right, #202020, #333333);
+                  font-size: 18px;
+                  font-weight: bolder;
+                  color: azure;
+                  }
+
+
+                  .btn-x{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    border: 2px solid #ffffff;
+                    background: linear-gradient(to right, #202020, #333333);
+                    font-size: 30px;
+                    font-weight: bolder;
+                    color: azure;
+                    }
+                    .btn-x:hover{
+                      width: 80px;
+                      height: 80px;
+                      border-radius: 50%;
+                      border: 2px solid #0051ff;
+                      background: linear-gradient(to right, #424242, #333333);
+                      font-size: 32px;
+                      font-weight: bolder;
+                      color:rgb(255, 255, 255);
+                      
+                      }
+                      .btn-x:active{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        border: 2px solid #ffffff;
+                        background: linear-gradient(to right, #202020, #333333);
+                        font-size: 30px;
+                        font-weight: bolder;
+                        color: azure;
+                        }
+
+
+                        .btn-y{
+                          width: 80px;
+                          height: 80px;
+                          border-radius: 50%;
+                          border: 2px solid #ffffff;
+                          background: linear-gradient(to right, #202020, #333333);
+                          font-size: 30px;
+                          font-weight: bolder;
+                          color: azure;
+                          }
+                          .btn-y:hover{
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            border: 2px solid #ffc400;
+                            background: linear-gradient(to right, #424242, #333333);
+                            font-size: 32px;
+                            font-weight: bolder;
+                            color: #ffffff;
+                            }
+                            .btn-y:active{
+                              width: 80px;
+                              height: 80px;
+                              border-radius: 50%;
+                              border: 2px solid #ffffff;
+                              background: linear-gradient(to right, #202020, #333333);
+                              font-size: 30px;
+                              font-weight: bolder;
+                              color: azure;
+                              }
+
+
+
+
+                              .btn-z{
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 50%;
+                                border: 2px solid #ffffff;
+                                background: linear-gradient(to right, #202020, #333333);
+                                font-size: 30px;
+                                font-weight: bolder;
+                                color: azure;
+                                }
+                                .btn-z:hover{
+                                  width: 80px;
+                                  height: 80px;
+                                  border-radius: 50%;
+                                  border: 2px solid #ff0000;
+                                  background: linear-gradient(to right, #424242, #333333);
+                                  font-size: 32px;
+                                  font-weight: bolder;
+                                  color: #ffffff;
+                                  }
+                                  .btn-z:active{
+                                    width: 80px;
+                                    height: 80px;
+                                    border-radius: 50%;
+                                    border: 2px solid #ffffff;
+                                    background: linear-gradient(to right, #202020, #333333);
+                                    font-size: 30px;
+                                    font-weight: bolder;
+                                    color: azure;
+                                    }
+
+
+@media screen and (min-width: 1200px) {
+  /*Buttons Positions*/
+  .buttonsLeftTop{
+    margin-left:76px;
+    top: 180px;
+    position: fixed;
+    float: left;
+  }
+  .buttonsLeftBottom{
+    margin-left:180px;
+    top: 380px;
+    position: fixed;
+    float: left;
+  }
+  
+  .buttonsRight{
+    margin-left:920px;
+    top: 170px;
+    position: fixed;
+    float: left;
+  }
+
+
+  /*Button Right*/
+  .btn-x, .btn-y, .btn-z{
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+   }
+    .btn-x:hover, .btn-y:hover, .btn-z:hover{
+      width: 80px;
+      height: 80px;
+      font-size: 32px;
+     
+        
+      }
+      .btn-x:active, .btn-y:active, .btn-z:active{
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+        }
+
+
+        
+  
+
+}
+
+
+@media screen and (min-width: 996px) and (max-width: 1200px) {
+  /*Buttons Positions*/
+  .buttonsLeftTop{
+    margin-left:28px;
+    top: 170px;
+    position: fixed;
+    float: left;
+  }
+  .buttonsLeftBottom{
+    margin-left:135px;
+    top: 360px;
+    position: fixed;
+    float: left;
+  }
+  
+  .buttonsRight{
+    margin-left:790px;
+    top: 160px;
+    position: fixed;
+    float: left;
+  }
+
+  /*Button Right*/
+  .btn-x, .btn-y, .btn-z{
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+   }
+    .btn-x:hover, .btn-y:hover, .btn-z:hover{
+      width: 70px;
+      height: 70px;
+      font-size: 32px;
+     
+        
+      }
+      .btn-x:active, .btn-y:active, .btn-z:active{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 996px) {
+    /*Buttons Positions*/
+  .buttonsLeftTop{
+    margin-left:28px;
+    top: 100px;
+    position: fixed;
+    float: left;
+  }
+  .buttonsLeftBottom{
+    margin-left:135px;
+    top: 260px;
+    position: fixed;
+    float: left;
+  }
+  
+  .buttonsRight{
+    margin-left:580px;
+    top: 105px;
+    position: fixed;
+    float: left;
+  }
+    /*Button Right*/
+    .btn-x, .btn-y, .btn-z{
+      width: 60px;
+      height: 60px;
+      font-size: 23px;
+     }
+      .btn-x:hover, .btn-y:hover, .btn-z:hover{
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+       
+          
+        }
+        .btn-x:active, .btn-y:active, .btn-z:active{
+          width: 60px;
+          height: 60px;
+          font-size: 23px;
+          }
+}
+
+@media screen and (min-width: 579px) and (max-width: 768px) {
+  /*Buttons Positions*/
+  .buttonsLeftTop{
+    margin-left:28px;
+    top: 100px;
+    position: fixed;
+    float: left;
+  }
+  .buttonsLeftBottom{
+    margin-left:135px;
+    top: 260px;
+    position: fixed;
+    float: left;
+  }
+  
+  .buttonsRight{
+    margin-left:425px;
+    top: 55px;
+    position: fixed;
+    float: left;
+  }
+      /*Button Right*/
+      .btn-x, .btn-y, .btn-z{
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+       }
+        .btn-x:hover, .btn-y:hover, .btn-z:hover{
+          width: 50px;
+          height: 50px;
+          font-size: 20px;
+         
+            
+          }
+          .btn-x:active, .btn-y:active, .btn-z:active{
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            }
+}
+
+
+@media screen and (min-width: 478px) and (max-width: 578px) {
+  /*Buttons Positions*/
+  .buttonsLeftTop{
+    margin-left:28px;
+    top: 100px;
+    position: fixed;
+    float: left;
+  }
+  .buttonsLeftBottom{
+    margin-left:135px;
+    top: 260px;
+    position: fixed;
+    float: left;
+  }
+  
+  .buttonsRight{
+    margin-left:400px;
+    top: 55px;
+    position: fixed;
+    float: left;
+  }
+      /*Button Right*/
+      .btn-x, .btn-y, .btn-z{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+       }
+        .btn-x:hover, .btn-y:hover, .btn-z:hover{
+          width: 30px;
+          height: 30px;
+          font-size: 14px;
+         
+            
+          }
+          .btn-x:active, .btn-y:active, .btn-z:active{
+            width: 30px;
+            height: 30px;
+            font-size: 12px;
+            }
+}
