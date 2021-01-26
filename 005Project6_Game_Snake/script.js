@@ -1,8 +1,5 @@
 const cvs = document.getElementById("game-canva");
 const ctx = cvs.getContext("2d");
-const cvsbr= document.getElementById("btn-restart");
-const ctxbr = cvs.getContext("2d");
-
 
 let level = 0;
 // create the unit
@@ -19,10 +16,6 @@ const skin3 = new Image();
 skin3.src = "./media/skin3.png";
 const skin4 = new Image();
 skin4.src = "./media/skin4.png";
-const btnrestarta = new Image();
-btnrestarta.src = "./media/btnrestarta.png"
-const btnrestartb = new Image();
-btnrestartb.src = "./media/btnrestartb.png"
 const groundEasy = new Image();
 groundEasy.src = "./media/groundEasy.png";
 const groundMedium = new Image();
@@ -66,11 +59,6 @@ left.src = "./media/audio/left.mp3";
 down.src = "./media/audio/down.mp3";
 intro.src = "./media/audio/intro.mp3";
 
-let btnRest = {
-    x : box * 4 + 21,
-    y : box * 12 + 23
-};
-
 
 
 // create the snake
@@ -100,6 +88,7 @@ let score = 0;
 
 let d;
 
+
 document.addEventListener("keydown",direction);
 
 function direction(event){
@@ -120,6 +109,33 @@ function direction(event){
             }
         }
 }
+
+//constrol botones
+
+document.getElementById("btn-up").addEventListener("click", function(){
+    if(d != "DOWN"){
+        d = "UP";
+        up.play();
+    }
+});
+document.getElementById("btn-down").addEventListener("click", function(){
+    if(d != "UP"){
+        d = "DOWN";
+        down.play();
+    }
+});
+document.getElementById("btn-left").addEventListener("click", function(){
+    if(d != "RIGHT"){
+        left.play();
+        d = "LEFT";
+    }
+});
+document.getElementById("btn-right").addEventListener("click", function(){
+    if(d!= "LEFT"){
+        d = "RIGHT";
+        right.play();
+    }
+});
 
 // cheack collision function
 function collision(head,array){
@@ -239,7 +255,7 @@ window.onload = function() {
  
 };
 
- 
+ // level selector for Kewyboard
 document.addEventListener("keydown", function(e) {
     
     let key = e.keyCode;
@@ -272,19 +288,26 @@ document.addEventListener("keydown", function(e) {
     
 });
 
-// button state
-//let ClientRect = cvs.getBoundingClientRect();
 
-/*
-cvsbr.addEventListener("click", function(e){
-    //let posx = e.clientX;
-    //let posy = e.clientY;
-    //console.log(posx + " " +posy + " "+Btn );
-   
-    ctxbr.drawImage(btnrestartb,btnRest.x,btnRest.y);
-    setTimeout(function(){ ctxbr.drawImage(btnrestarta,btnRest.x,btnRest.y); }, 100);
-   
-    
-});*/
+//level selection for buttons
+document.getElementById("btn-x").addEventListener("click", function(){
+    if(stage == 1 || stage == 3){
+            level = 300;
+            introGame(level);
+    }
+});
 
+document.getElementById("btn-y").addEventListener("click", function(){
+    if(stage == 1 || stage == 3){
+            level = 200;
+            introGame(level);
+    }
+});
+
+document.getElementById("btn-z").addEventListener("click", function(){
+    if(stage == 1 || stage == 3){
+            level = 100;
+            introGame(level);
+    }
+});
 
