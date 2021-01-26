@@ -44,6 +44,10 @@ footer a:hover{
     float: right;
 }
 
+button{
+  outline: none !important;
+}
+
 .btn-restart{
   width: 60px;
   height: 60px;
@@ -53,6 +57,7 @@ footer a:hover{
   font-size: 20px;
   font-weight: bolder;
   color: azure;
+  
   }
   .btn-restart:hover{
     width: 60px;
