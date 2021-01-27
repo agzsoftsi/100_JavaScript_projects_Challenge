@@ -16,6 +16,8 @@ const skin3 = new Image();
 skin3.src = "./media/skin3.png";
 const skin4 = new Image();
 skin4.src = "./media/skin4.png";
+const skin5 = new Image();
+skin5.src = "./media/skin5.png";
 const groundEasy = new Image();
 groundEasy.src = "./media/groundEasy.png";
 const groundMedium = new Image();
@@ -240,14 +242,36 @@ let game = setInterval(draw,level);
 window.onload = function() {
     intro.play();
     ctx.drawImage(skin,0,0);
-    //ctx.drawImage(cvsbr,btnRest.x,btnRest.y);
-   // ctxbr.drawImage(btnrestartb,btnRest.x,btnRest.y);
-    
+
+    //skin changer
+    let skinSelector = 0;
+    document.getElementById("btn-skin").addEventListener("click", function(){
+        skinSelector += 1;
+        if( skinSelector == 1){
+            ctx.drawImage(skin2,0,0);
+        }else if(skinSelector == 2){
+            ctx.drawImage(skin3,0,0);
+        }else if(skinSelector == 3){
+            ctx.drawImage(skin4,0,0);
+        }else if(skinSelector == 4){
+            ctx.drawImage(skin5,0,0);
+        }else if(skinSelector == 5){
+            skinSelector = 0;
+            ctx.drawImage(skin,0,0);
+        }
+        if(stage == 1){
+            ctx.drawImage(gameIntro3,224,0);
+        }
+        
    
+        
+    });
     ctx.drawImage(gameIntro,224,0);
     setTimeout(function(){ ctx.drawImage(gameIntro1,224,0); }, 300);
     setTimeout(function(){ ctx.drawImage(gameIntro2,224,0); }, 1000);
     setTimeout(function(){ ctx.drawImage(gameIntro3,224,0); }, 1400);
+    
+    
     //setTimeout(function(){ introGame(); }, 1800);
     stage = 1;
 
@@ -310,4 +334,5 @@ document.getElementById("btn-z").addEventListener("click", function(){
             introGame(level);
     }
 });
+
 

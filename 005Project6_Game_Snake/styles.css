@@ -1,7 +1,7 @@
 .body-light{
-    background: #673AB7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #270a58;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #270a58, #160238);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #270a58, #160238); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
 .body-dark{
@@ -127,6 +127,7 @@ button{
         font-size: 18px;
         font-weight: bolder;
         color: azure;
+        display: none;
         }
         .btn-score:hover{
           width: 50px;
@@ -189,7 +190,7 @@ button{
                     background: linear-gradient(to right, #202020, #333333);
                     font-size: 30px;
                     font-weight: bolder;
-                    color: azure;
+                    color: rgb(240, 240, 255);
                     }
                     .btn-x:hover{
                       width: 80px;
