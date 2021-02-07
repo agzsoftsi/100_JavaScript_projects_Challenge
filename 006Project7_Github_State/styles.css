@@ -1,0 +1,50 @@
+
+
+.body-light{
+    
+
+
+    background: #673AB7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+
+
+}
+.body-dark{
+background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+
+
+/* Action buttons Styles */
+
+
+
+
+/* Footer Buttons styles */
+.social-media{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+   
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+}
+footer a:hover{
+    text-decoration: none;
+    color: rgb(255, 166, 0);
+}
+
+#logoControl{
+    font-size: larger;    
+    float: right;
+}
+
